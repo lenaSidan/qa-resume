@@ -1,0 +1,130 @@
+.tabContainerWrapper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	height: 100px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.scrollButton {
+	position: absolute;
+	bottom: 0;
+	background-color: #313131;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	height: 60px;
+	width: 50px;
+	font-size: 50px;
+	color: #ddd;
+	z-index: 110;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.scrollButton.left {
+	left: 0;
+	border-radius: 0 8px 0 0;
+}
+
+.scrollButton.right {
+	right: 0;
+	border-radius: 8px 0 0 0;
+}
+
+.tabContainer {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+	overflow-x: scroll;
+	white-space: nowrap;
+	padding: 0 40px;
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.tabContainer::-webkit-scrollbar {
+	display: none;
+}
+
+.tab {
+	width: 180px;
+	height: 60px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f3f3f3;
+	color: #333;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 8px 8px 0 0;
+	cursor: pointer;
+	transition:
+		margin-top 0.2s ease,
+		height 0.2s ease,
+		background-color 0.2s ease;
+	margin-top: 5px;
+	flex-shrink: 0;
+	-webkit-user-select: none;
+	user-select: none;
+	text-align: center;
+	white-space: normal;
+	word-wrap: break-word;
+	padding: 0 5px;
+}
+
+.tab:hover {
+	height: 65px;
+	font-size: 20px;
+	color: #247045;
+	margin-top: 0;
+	background-color: #ddd;
+}
+
+.activeTab {
+	background-color: #ddd;
+	font-size: 22px;
+	font-weight: 500;
+	color: #247045;
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+	height: 65px;
+	margin-top: 0;
+}
+@media (max-width: 768px) {
+	.tabContainerWrapper {
+		height: 60px;
+		overflow-x: scroll;
+	}
+
+	.tab {
+		width: 100px;
+		height: 35px;
+		font-size: 12px;
+		padding: 0 3px;
+		margin: 0;
+		white-space: normal;
+	}
+	.tab:hover {
+		height: 37px;
+		font-size: 12px;
+	}
+
+	.activeTab {
+		background-color: #ddd;
+		font-size: 12px;
+		height: 37px;
+	}
+	.scrollButton {
+		height: 35px;
+		width: 30px;
+		font-size: 30px;
+		padding: 5px;
+	}
+}

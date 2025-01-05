@@ -1,0 +1,81 @@
+html,
+body {
+	height: 100%; /* Устанавливаем высоту на весь экран */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.mainContent {
+	flex: 1; /* Заставляет контент занимать всё доступное пространство */
+}
+
+.footerBox {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #313131;
+	color: #ffffff;
+	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.bottomInfoBox {
+	padding: 0 0 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+}
+.link {
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 10px;
+	border: 1px solid #ffffff;
+	padding: 5px 10px;
+	border-radius: 4px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.link:hover {
+	background-color: #ffffff;
+	color: #313131;
+}
+.workingHoursBox {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+}
+.workingHours {
+	padding-left: 10px;
+}
+@media (max-width: 768px) {
+	.footerBox {
+		padding: 0;
+	}
+	.bottomInfoBox {
+
+		font-size: 10px;
+	}
+	.workingHoursBox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+
+	}
+	.workingHours,
+	.workingHours2 {
+		font-size: 12px;
+	}
+}
