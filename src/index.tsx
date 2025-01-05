@@ -7,6 +7,26 @@ import App from './App';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './locales/i18n';
 
+// Полифилл для плавного скролла
+if (!('scrollBehavior' in document.documentElement.style)) {
+	document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
+		anchor.addEventListener('click', (e: Event) => {
+			e.preventDefault();
+
+			const targetId = anchor.getAttribute('href'); // `anchor` уже типизирован как HTMLAnchorElement
+			if (targetId) {
+				const target = document.querySelector(targetId);
+				if (target instanceof HTMLElement) {
+					window.scrollTo({
+						top: target.offsetTop,
+						behavior: 'smooth',
+					});
+				}
+			}
+		});
+	});
+}
+
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
