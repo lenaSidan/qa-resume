@@ -47,19 +47,10 @@ function LanguageSelector(): JSX.Element {
 				<button
 					className={styles.languageBox}
 					type="button"
-					onClick={() => handleLanguageChange('tr')}
+					onClick={() => handleLanguageChange('ru')}
 				>
-					TR
-				</button>
-				{/* <button type="button" onClick={() => handleLanguageChange('ru')}>
 					RU
 				</button>
-				<button type="button" onClick={() => handleLanguageChange('es')}>
-					ES
-				</button>
-				<button type="button" onClick={() => handleLanguageChange('uk')}>
-					UK
-				</button> */}
 			</div>
 		</div>
 	);

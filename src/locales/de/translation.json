@@ -1,1 +1,14 @@
-{}
+{
+	"Sidanova": "Elena Sidanova",
+	"React": "Frontend-Entwicklerin | React | Redux Toolkit",
+	"Description": "\"Ich erstelle moderne und funktionale Websites, die Aufmerksamkeit erregen und leicht verständlich sind. Komplettentwicklung — vom Design bis zur Umsetzung. Mein Fokus liegt auf Einfachheit, Ästhetik und Benutzerfreundlichkeit.\"",
+	"DownloadResume": "Lebenslauf herunterladen",
+	"Contact": "Kontaktieren Sie mich",
+	"Portfolio": "Portfolio",
+	"MyProjects": "Meine Projekte",
+	"ViewProject": "Projekt ansehen",
+	"Project1Description": "Eine Website, die Ausländern in Deutschland mit Informationen zu Bildung, Integration und Beschäftigung hilft.",
+	"Project2Description": "Ein interaktives Menü für eine Pizzeria mit schnellem Zugriff auf Gerichte und Fotos.",
+	"Project3Description": "Eine Unternehmenswebsite für Siltacom mit detaillierten Informationen über ihre Dienstleistungen.",
+	"AllRightsReserved": "Alle Rechte vorbehalten."
+}

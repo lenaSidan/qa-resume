@@ -3,9 +3,14 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie';
-import PageHome from './views/PageHome';
 import Loading from './components/loading/Loading';
-import FooterPage from './components/footers/FooterPage';
+import AboutMe from './views/aboutMe/AboutMe';
+import Contact from './views/contact/Contact';
+import MainSection from './views/mainSection/MainSection';
+import Skills from './views/skills/Skills';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Portfolio from './views/portfolio/Portfolio';
 
 function App(): JSX.Element {
 	const { i18n } = useTranslation();
@@ -21,12 +26,17 @@ function App(): JSX.Element {
 		<div id="root">
 			<div className="mainContent">
 				<Suspense fallback={<Loading />}>
+					<Header />
 					<Routes>
-						<Route path="/" element={<PageHome />} />
+						<Route path="/" element={<MainSection />} />
+						<Route path="/about" element={<AboutMe />} />
+						<Route path="/skills" element={<Skills />} />
+						<Route path="/portfolio" element={<Portfolio />} />
+						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</Suspense>
 			</div>
-			<FooterPage />
+			<Footer />
 		</div>
 	);
 }
