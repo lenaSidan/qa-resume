@@ -11,7 +11,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 81px;
+	width: 100%;
+	margin-right: 100px;
 	padding: 8px;
 	gap: 5px;
 	cursor: pointer;
@@ -34,17 +35,17 @@
 }
 
 .dropdownListActive {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  max-width: 90%;
-  padding: 5px 0;
-  z-index: 101;
+	display: flex;
+	flex-direction: row;
+	position: absolute; /* Чтобы меню позиционировалось относительно родителя */
+	top: 90%; /* Расположить под кнопкой */
+	left: 50%; /* Центрировать относительно кнопки */
+	transform: translateX(-50%); /* Смещение для центрирования */
+	padding: 5px 0;
+	z-index: 101;
+
 }
+
 
 .dropdownListActive button {
   display: flex;
@@ -52,9 +53,9 @@
   align-items: center;
   white-space: nowrap;
   padding: 5px;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
-  width: 100%;
+ 
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -62,7 +63,7 @@
 }
 
 .dropdownListActive button:hover {
-	color: #000000;
+	color: #e05d00;
 }
 @media (max-width: 768px) {
 	.dropdownHeader {

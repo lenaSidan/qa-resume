@@ -1,5 +1,5 @@
 import styles from './navbarHome.module.css';
-import LanguageSelector from './LanguageSelector';
+import LanguageSelector from '../header/LanguageSelector';
 
 import { useTranslation } from 'react-i18next';
 
