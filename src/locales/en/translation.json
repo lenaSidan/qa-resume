@@ -3,13 +3,17 @@
 	"React": "Frontend Developer | React | Redux Toolkit",
 	"Description": "\"I create modern and functional websites that attract attention and are easy to navigate. Full-cycle development — from design to implementation. My work focuses on simplicity, aesthetics, and user-friendliness.\"",
 	"DownloadResume": "Download Resume",
-	"AboutMe": "About Me",
 	"Contact": "Contact Me",
+	"AboutMe": "About Me",
+	"Skills": "Skills",
 	"Portfolio": "Portfolio",
 	"MyProjects": "My Projects",
 	"ViewProject": "View Project",
 	"Project1Description": "A website to help foreigners living in Germany with information on education, integration, and employment.",
 	"Project2Description": "An interactive menu for a pizzeria with quick access to dishes and photos.",
 	"Project3Description": "A corporate website for Siltacom with detailed information about its services.",
-	"AllRightsReserved": "All rights reserved."
+	"AllRightsReserved": "All rights reserved.",
+	"portfolioDescriptionPart1": "Below are some of the web applications and websites I have built. Each project showcases my dedication to creating user-friendly and aesthetically pleasing interfaces, ",
+	"portfolioDescriptionPart2": "using modern technologies like React, Redux Toolkit, and TypeScript. ",
+	"portfolioDescriptionPart3": "Feel free to explore and learn more about my work!"
 }

@@ -32,13 +32,12 @@
 		box-shadow 0.3s ease;
 }
 .photo:hover {
-	transform: scale(1.0);
+	transform: scale(1);
 	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 .name {
-	font-size: 4.1rem;
-
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3.8rem;
+	font-weight: 300;
 	color: #e05d00;
 	margin-bottom: 40px;
 }
@@ -69,8 +68,7 @@
 	border-radius: 5px;
 	text-decoration: none;
 	font-size: 1rem;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 	transition: background 0.3s ease;
 }
@@ -80,14 +78,13 @@
 }
 
 .buttonSecondary {
-	border: 2px solid #e05d00;
+	border: 1.5px solid #e05d00;
 	color: #e05d00;
 	padding: 10px 20px;
 	border-radius: 5px;
 	text-decoration: none;
 	font-size: 1rem;
-	font-weight: 500;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
 	transition:
 		background 0.3s ease,
 		color 0.3s ease;

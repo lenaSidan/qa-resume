@@ -10,16 +10,16 @@ const projects = [
 		link: 'https://menu.tomate-pizza.de/',
 	},
 	{
-		title: 'Integrate Germany',
-		descriptionKey: 'Project1Description',
-		image: '/integrate-germany.jpg',
-		link: 'https://integrate-germany.de/',
-	},
-	{
 		title: 'Siltacom Website',
 		descriptionKey: 'Project3Description',
 		image: '/siltacom.jpg',
 		link: 'https://www.siltacom.fi/',
+	},
+	{
+		title: 'Integrate Germany',
+		descriptionKey: 'Project1Description',
+		image: '/integrate-germany.jpg',
+		link: 'https://integrate-germany.de/',
 	},
 ];
 
@@ -28,23 +28,40 @@ function Portfolio(): JSX.Element {
 
 	return (
 		<section className={styles.portfolioSection} id="portfolio">
-			<h2 className={styles.title}>{t('Portfolio')}</h2>
-			<p className={styles.subtitle}>{t('MyProjects')}</p>
+			<div className={styles.title}>
+				{t('Portfolio').toUpperCase()}
+				<div className={styles.descriptionText}>
+					{t('portfolioDescriptionPart1')}
+					<b>{t('portfolioDescriptionPart2')}</b>
+					{t('portfolioDescriptionPart3')}
+				</div>
+			</div>
+
+			<div className={styles.textBox}>
+				<p className={styles.subtitle}>{t('MyProjects').toUpperCase()}</p>
+			</div>
 			<div className={styles.projectGrid}>
 				{projects.map((project, index) => (
 					<div className={styles.projectCard} key={index}>
-						<img src={project.image} alt={project.title} className={styles.projectImage} />
+						<div className={styles.mediaContainer}>
+							<img src={project.image} alt={project.title} className={styles.projectImage} />
+						</div>
+
 						<div className={styles.projectInfo}>
-							<h3 className={styles.projectTitle}>{t(project.title)}</h3>
-							<p className={styles.projectDescription}>{t(project.descriptionKey)}</p>
-							<a
-								href={project.link}
-								target="_blank"
-								rel="noopener noreferrer"
-								className={styles.projectLink}
-							>
-								{t('ViewProject')}
-							</a>
+							<div className={styles.projectTitleBox}>
+								<div className={styles.projectTitle}>{t(project.title)}</div>
+								<p className={styles.projectDescription}>{t(project.descriptionKey)}</p>
+							</div>
+							<div>
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									className={styles.projectLink}
+								>
+									{t('ViewProject').toUpperCase()}
+								</a>
+							</div>
 						</div>
 					</div>
 				))}
