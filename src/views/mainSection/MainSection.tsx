@@ -8,7 +8,7 @@ function MainSection(): JSX.Element {
 		<section className={styles.mainSection}>
 			<div className={styles.content}>
 				<div className={styles.text}>
-					<div className={styles.name}>{t('Sidanova')}</div>
+					<div className={styles.name}>{t('Sidanova').toUpperCase()}</div>
 					<p className={styles.subtitle}>{t('React')}</p>
 					<p className={styles.description}>{t('Description')}</p>
 					<div className={styles.buttons}>
@@ -23,10 +23,10 @@ function MainSection(): JSX.Element {
 								document.body.removeChild(link);
 							}}
 						>
-							{t('DownloadResume')}
+							{t('DownloadResume').toUpperCase()}
 						</a>
 						<a href="#contact" className={styles.buttonSecondary}>
-							{t('Contact')}
+							{t('Contact').toUpperCase()}
 						</a>
 					</div>
 				</div>

@@ -13,21 +13,21 @@
 	align-items: center;
 	width: 100%;
 	margin-right: 100px;
-	padding: 8px;
+	padding: 0 0 7px 0;
 	gap: 5px;
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
-	color: #ffffff;
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 0em;
+	color: #f1eceb;
+	font-size: 1rem;
+	font-weight: 300;
+
 	text-align: center;
 }
 
 .dropdownHeader:hover {
-	color: #f1f1f1;
+	color: #f08030;
+	transform: scale(1.05);
 }
 
 .dropdownListNoneActive {
@@ -37,29 +37,26 @@
 .dropdownListActive {
 	display: flex;
 	flex-direction: row;
-	position: absolute; /* Чтобы меню позиционировалось относительно родителя */
-	top: 90%; /* Расположить под кнопкой */
-	left: 50%; /* Центрировать относительно кнопки */
-	transform: translateX(-50%); /* Смещение для центрирования */
-	padding: 5px 0;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0;
 	z-index: 101;
-
 }
 
-
 .dropdownListActive button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  padding: 5px;
-  color: #ffffff;
-  font-size: 14px;
- 
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	padding: 5px;
+	color: #f1eceb;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 
 .dropdownListActive button:hover {
@@ -88,28 +85,25 @@
 		top: 100%;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 50%; 
-		padding:0 0 5px 0;
+		width: 50%;
+		padding: 0 0 5px 0;
 		z-index: 101;
 		background-color: rgba(255, 255, 255, 0.9);
 		border-radius: 4px;
-
 	}
 
 	.dropdownListActive button {
-		font-size: 8px; 
+		font-size: 8px;
 		padding: 0 8px;
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
 		color: #333;
 		text-align: center;
-
 	}
 
 	.dropdownListActive button:hover {
 		color: #007b32;
-		background-color: rgba(0, 0, 0, 0.1); 
+		background-color: rgba(0, 0, 0, 0.1);
 	}
-	
 }

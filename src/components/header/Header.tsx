@@ -1,5 +1,6 @@
 import 'react';
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 import styles from './header.module.css';
 import LanguageSelector from './LanguageSelector';
 
@@ -10,30 +11,50 @@ function Header(): JSX.Element {
 		<header className={styles.header}>
 			<div className={styles.logo}>
 				<a href="/" className={styles.logoLink}>
-					<img src="/logo.png" alt={t('Sidanova')} className={styles.logoImage} />
+					<img src="/logoSidan.png" alt={t('Sidanova')} className={styles.logoImage} />
 				</a>
 			</div>
 			<nav className={styles.nav}>
 				<ul className={styles.navList}>
 					<li>
-						<a href="/about" className={styles.navLink}>
-							{t('AboutMe')}
-						</a>
+						<NavLink
+							to="/about"
+							className={({ isActive }) =>
+								isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+							}
+						>
+							{t('AboutMe').toUpperCase()}
+						</NavLink>
 					</li>
 					<li>
-						<a href="/skills" className={styles.navLink}>
-							{t('Skills')}
-						</a>
+						<NavLink
+							to="/skills"
+							className={({ isActive }) =>
+								isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+							}
+						>
+							{t('Skills').toUpperCase()}
+						</NavLink>
 					</li>
 					<li>
-						<a href="/portfolio" className={styles.navLink}>
-							{t('Portfolio')}
-						</a>
+						<NavLink
+							to="/portfolio"
+							className={({ isActive }) =>
+								isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+							}
+						>
+							{t('Portfolio').toUpperCase()}
+						</NavLink>
 					</li>
 					<li>
-						<a href="#contact" className={styles.navLink}>
-							{t('Contact')}
-						</a>
+						<NavLink
+							to="/contact"
+							className={({ isActive }) =>
+								isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+							}
+						>
+							{t('Contact').toUpperCase()}
+						</NavLink>
 					</li>
 				</ul>
 			</nav>
