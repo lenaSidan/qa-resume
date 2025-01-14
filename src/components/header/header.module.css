@@ -1,11 +1,10 @@
 .header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	background-color: #46494b;
-	color: white;
-	/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+	align-items: flex-end;
+	padding: 5px 0;
+	/* background-color: #100d0e;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -18,9 +17,14 @@
 	gap: 10px;
 	margin-left: 40px;
 }
-.logo :hover {
-	transform: scale(1.02);
+
+.logo:hover {
+	transform: scale(1.05);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
 }
+
 .logoLink {
 	display: flex;
 	align-items: center;
@@ -55,12 +59,12 @@
 }
 
 .navLink:hover {
-	color: #f08030;
+	color: #e05d00;
 	transform: scale(1.05);
 }
 .navLink:active,
 .navLink.active {
-	color: #f08030;
+	color: #e05d00;
 	transform: scale(1.05);
 }
 .rightSection {

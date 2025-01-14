@@ -1,0 +1,118 @@
+.skillsSection {
+	padding: 100px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: 300;
+	color: #f1eceb;
+}
+
+.textBox {
+	width: 100%;
+	max-width: 1200px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.description {
+	max-width: 1200px;
+	text-align: center;
+	font-size: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 200;
+	line-height: 1.8;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #8d8d8d;
+}
+
+.skillsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.skillCard {
+  background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skillCard:hover {
+	background: linear-gradient(to bottom, #1a1516, #6a6e73 50%, #1a1516);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.skillHeader,
+.skillFooter {
+	font-family: 'Courier New', monospace;
+	font-size: 1rem;
+	color: #e05d00;
+	text-shadow: 0 0 5px rgba(224, 93, 0, 0.3);
+}
+
+.skillHeader:hover,
+.skillFooter:hover {
+	color: #ff7f32;
+	text-shadow: 0 0 8px rgba(255, 127, 50, 0.5);
+}
+
+
+.skillBody {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.skillItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #54585b;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color: #f1eceb;
+	font-size: 0.9rem;
+	font-weight: 500;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* .skillItem:hover {
+	background-color: #f08030;
+	color: #313131;
+} */
+.skillItem::before {
+	content: '•';
+	color: #e05d00;
+	margin-right: 10px;
+	font-size: 1.2rem;
+	transition: transform 0.3s ease;
+}
+
+.skillItem:hover::before {
+	transform: scale(1.5);
+	color: #ff7f32;
+}
+
+.codeTag {
+	font-family: 'Courier New', monospace;
+  font-size: 1.0rem;
+  font-weight: 400;
+	color: #e05d00;
+}

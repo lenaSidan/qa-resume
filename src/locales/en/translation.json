@@ -1,5 +1,5 @@
 {
-  "Sidanova": "Elena Sidanova",
+	"Sidanova": "Elena Sidanova",
 	"React": "Frontend Developer | React | Redux Toolkit",
 	"Description": "\"I create modern and functional websites that attract attention and are easy to navigate. Full-cycle development — from design to implementation. My work focuses on simplicity, aesthetics, and user-friendliness.\"",
 	"DownloadResume": "Download Resume",
@@ -15,5 +15,6 @@
 	"AllRightsReserved": "All rights reserved.",
 	"portfolioDescriptionPart1": "Below are some of the web applications and websites I have built. Each project showcases my dedication to creating user-friendly and aesthetically pleasing interfaces, ",
 	"portfolioDescriptionPart2": "using modern technologies like React, Redux Toolkit, and TypeScript. ",
-	"portfolioDescriptionPart3": "Feel free to explore and learn more about my work!"
+	"portfolioDescriptionPart3": "Feel free to explore and learn more about my work!",
+	"skillsDescription": "Here are the technologies and tools I use to create modern, scalable, and visually appealing applications. Each skill is essential for my work as a Frontend Developer, and I also have expertise in design tools like Adobe Photoshop and Illustrator."
 }

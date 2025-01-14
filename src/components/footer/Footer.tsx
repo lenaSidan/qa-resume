@@ -8,9 +8,6 @@ function Footer(): JSX.Element {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.container}>
-				<p className={styles.info}>
-					&copy; {new Date().getFullYear()} ELENA SIDANOVA — {t('AllRightsReserved').toUpperCase()}
-				</p>
 				<div className={styles.socialLinks}>
 					<a
 						href="https://www.linkedin.com/in/elena-sidanova-baa81b2b7/"
@@ -32,6 +29,9 @@ function Footer(): JSX.Element {
 						<span className={styles.tag}>&lt;/Email&gt;</span>
 					</a>
 				</div>
+				<p className={styles.info}>
+					&copy; {new Date().getFullYear()} ELENA SIDANOVA — {t('AllRightsReserved').toUpperCase()}
+				</p>
 			</div>
 		</footer>
 	);
