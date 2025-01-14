@@ -31,7 +31,7 @@ function MainSection(): JSX.Element {
 					</div>
 				</div>
 				<div className={styles.imageBox}>
-					<img src="/introImage.png" alt={t('Sidanova')} className={styles.photo} />
+					<img src="/introImage-black.png" alt={t('Sidanova')} className={styles.photo} />
 				</div>
 			</div>
 		</section>
