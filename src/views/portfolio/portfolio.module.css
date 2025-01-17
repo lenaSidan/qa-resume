@@ -1,5 +1,5 @@
 .portfolioSection {
-	padding: 100px 0 0 0;
+	padding: 30px 0 100px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,11 +13,13 @@
 	text-align: left;
 	display: flex;
 }
+
 .title {
 	font-size: 2rem;
 	font-weight: 300;
 	color: #f1eceb;
 }
+
 .descriptionText {
 	max-width: 1200px;
 	text-align: center;
@@ -26,22 +28,37 @@
 	font-weight: 200;
 	line-height: 1.8;
 	margin-top: 20px;
-	margin-bottom: 20px;
 	color: #8d8d8d;
 }
+
 .descriptionText b {
 	font-weight: 500;
 	color: #f1eceb;
 }
-
+.textBox {
+	width: 100%;
+	max-width: 1200px;
+	text-align: left;
+	display: flex;
+	margin-top: 50px;
+}
+.textBox2 {
+	width: 100%;
+	max-width: 1200px;
+	text-align: left;
+	display: flex;
+	margin-top: 20px;
+}
 .subtitle {
 	text-align: left;
 	font-weight: 300;
 	font-size: 1.2rem;
 	color: #e05d00;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 }
-
+.sitesBlock {
+	margin: 30px 0;
+}
 .projectGrid {
 	width: 100%;
 	max-width: 1200px;
@@ -57,11 +74,12 @@
 	align-items: center;
 	border-radius: 10px;
 	padding: 20px;
-  background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
+	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 	transition: transform 0.3s ease, background 0.3s ease;
-	height: 100%; 
+	height: 100%;
 	position: relative;
+	
 }
 
 .projectCard:hover {
@@ -91,6 +109,7 @@
 .projectImage:hover {
 	transform: scale(1.05);
 }
+
 .projectInfo {
 	display: flex;
 	flex-direction: column;
@@ -101,9 +120,11 @@
 	width: 100%;
 	flex: 1 1 auto;
 }
+
 .projectTitleBox {
 	margin-bottom: auto;
 }
+
 .projectTitle {
 	font-size: 1.3rem;
 	font-weight: 300;
@@ -134,4 +155,11 @@
 
 .projectLink:hover {
 	background-color: #8d8d8d;
+}
+.codeDivider {
+	font-family: 'Courier New', monospace; /* Моноширинный шрифт для кода */
+	color: #8d8d8d; /* Нейтральный серый цвет */
+	font-size: 0.9rem; /* Небольшой размер шрифта */
+	text-align: center; /* Центрирование текста */
+	margin: 20px 0; /* Отступы сверху и снизу */
 }
