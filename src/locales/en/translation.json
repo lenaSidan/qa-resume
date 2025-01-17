@@ -16,5 +16,17 @@
 	"portfolioDescriptionPart1": "Below are some of the web applications and websites I have built. Each project showcases my dedication to creating user-friendly and aesthetically pleasing interfaces, ",
 	"portfolioDescriptionPart2": "using modern technologies like React, Redux Toolkit, and TypeScript. ",
 	"portfolioDescriptionPart3": "Feel free to explore and learn more about my work!",
-	"skillsDescription": "Here are the technologies and tools I use to create modern, scalable, and visually appealing applications. Each skill is essential for my work as a Frontend Developer, and I also have expertise in design tools like Adobe Photoshop and Illustrator."
+	"Websites": "<Websites>",
+	"Websites/>": "<Websites/>",
+	"Digital Drawings": "<Digital Drawings>",
+	"Digital Drawings/>": "<Digital Drawings/>",
+	"Logos": "<Logos>",
+	"Logos/>": "<Logos/>",
+	"skillsDescription": "Here are the technologies and tools I use to create modern, scalable, and visually appealing applications. Each skill is essential for my work as a Frontend Developer, and I also have expertise in design tools like Adobe Photoshop and Illustrator.",
+	"Project 1": "TestPool: =>  Educational Platform for Technical Interview Preparation",
+	"ProjectDescription1": "TestPool is a vibrant and functional platform designed to prepare users for technical interviews. In this project, I developed unique pop-art-style graphic elements, created a user-friendly interface, and ensured responsiveness across various devices. The platform seamlessly combines aesthetics and functionality, offering users a delightful and intuitive experience.",
+	"Project 2": "TomatePizza: => Interactive Menu for a Pizzeria",
+	"ProjectDescription2": "TomatePizza is a modern and interactive menu website created for a pizzeria. In this project, I designed and illustrated a unique Italian-inspired visual style with vibrant graphics and a user-friendly interface. The website is fully responsive, ensuring a seamless experience across all devices. This project perfectly combines aesthetics and functionality, offering users an enjoyable interaction experience.",
+	"Logo 1": "Logos: => Creative Branding Concepts",
+	"Logo1Description": "This section features a collection of thoughtfully crafted logos that merge creativity with purpose. Each design reflects the essence of its brand, showcasing my ability to create visuals that communicate stories and values with clarity."
 }
