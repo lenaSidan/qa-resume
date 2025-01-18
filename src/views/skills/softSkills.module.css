@@ -1,47 +1,23 @@
-.skillsSection {
-	padding: 30px 20px;
+.softSkillsSection {
+	padding: 50px 0 100px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+
 }
 
 .title {
 	font-size: 2rem;
 	font-weight: 300;
 	color: #f1eceb;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.textBox {
-	width: 100%;
-	max-width: 1200px;
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-.description {
-	max-width: 1200px;
-	text-align: center;
-	font-size: 1rem;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 200;
-	line-height: 1.8;
-	margin-top: 20px;
 	margin-bottom: 20px;
-	color: #8d8d8d;
 }
 
-.skillsGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 20px;
+.softSkillsCard {
 	width: 100%;
 	max-width: 1200px;
-}
-
-.skillCard {
-
+	flex-direction: column;
 	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
 	border-radius: 10px;
 	padding: 20px;
@@ -53,8 +29,7 @@
 		transform 0.3s ease,
 		background 0.3s ease;
 }
-
-.skillCard:hover {
+.softSkillsCard:hover {
 	background: linear-gradient(to bottom, #1a1516, #6a6e73 50%, #1a1516);
 	transform: translateY(-5px);
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
@@ -67,17 +42,17 @@
 	color: #e05d00;
 	text-shadow: 0 0 5px rgba(224, 93, 0, 0.3);
 }
-
 .skillHeader:hover,
 .skillFooter:hover {
 	color: #ff7f32;
 	text-shadow: 0 0 8px rgba(255, 127, 50, 0.5);
 }
-
 .skillBody {
+	width: 100%;
+
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 15px;
 	justify-content: center;
 	margin: 20px 0;
 }
@@ -90,15 +65,11 @@
 	border-radius: 5px;
 	padding: 10px 15px;
 	color: #f1eceb;
-	font-weight: 500;
 	font-size: 0.9rem;
+	font-weight: 500;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* .skillItem:hover {
-	background-color: #f08030;
-	color: #313131;
-} */
 .skillItem::before {
 	content: '•';
 	color: #e05d00;
@@ -112,6 +83,9 @@
 	color: #ff7f32;
 }
 
+.tag {
+	color: #f1eceb;
+}
 .codeTag {
 	font-family: 'Courier New', monospace;
 	font-size: 1rem;

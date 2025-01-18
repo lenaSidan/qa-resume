@@ -12,17 +12,30 @@
 	"Project1Description": "A website to help foreigners living in Germany with information on education, integration, and employment.",
 	"Project2Description": "An interactive menu for a pizzeria with quick access to dishes and photos.",
 	"Project3Description": "A corporate website for Siltacom with detailed information about its services.",
+
 	"AllRightsReserved": "All rights reserved.",
-	"portfolioDescriptionPart1": "Below are some of the web applications and websites I have built. Each project showcases my dedication to creating user-friendly and aesthetically pleasing interfaces, ",
-	"portfolioDescriptionPart2": "using modern technologies like React, Redux Toolkit, and TypeScript. ",
-	"portfolioDescriptionPart3": "Feel free to explore and learn more about my work!",
+	"portfolioDescriptionPart1": "Here you will find examples of web applications, websites, and other digital projects. Each of these reflects my commitment to developing user-friendly and visually appealing interfaces. ",
+	"portfolioDescriptionPart2": "By utilizing modern technologies such as React, Redux Toolkit, and TypeScript, I ensure a seamless blend of functionality and design. ",
+	"portfolioDescriptionPart3": "I invite you to explore my work and learn more about it!",
+
 	"Websites": "<Websites>",
 	"Websites/>": "<Websites/>",
 	"Digital Drawings": "<Digital Drawings>",
 	"Digital Drawings/>": "<Digital Drawings/>",
 	"Logos": "<Logos>",
 	"Logos/>": "<Logos/>",
-	"skillsDescription": "Here are the technologies and tools I use to create modern, scalable, and visually appealing applications. Each skill is essential for my work as a Frontend Developer, and I also have expertise in design tools like Adobe Photoshop and Illustrator.",
+
+	"skillsDescription": "I combine technical expertise with a creative flair for design, enabling me to craft user interfaces that are not only functional but also visually compelling. My ability to integrate clean, efficient code with the development and refinement of designs gives me a unique advantage in delivering harmonious digital solutions.",
+	"Soft Skills": "Soft Skills",
+	"softSkills": {
+		"communication": "Communication",
+		"teamwork": "Teamwork",
+		"problemSolving": "Problem Solving",
+		"organization": "Organization",
+		"creativity": "Creativity",
+		"flexibility": "Flexibility"
+	},
+
 	"Project 1": "TestPool: =>  Educational Platform for Technical Interview Preparation",
 	"ProjectDescription1": "TestPool is a vibrant and functional platform designed to prepare users for technical interviews. In this project, I developed unique pop-art-style graphic elements, created a user-friendly interface, and ensured responsiveness across various devices. The platform seamlessly combines aesthetics and functionality, offering users a delightful and intuitive experience.",
 	"Project 2": "TomatePizza: => Interactive Menu for a Pizzeria",

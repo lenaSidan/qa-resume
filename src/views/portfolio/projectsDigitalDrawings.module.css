@@ -18,7 +18,7 @@
 	font-weight: 400;
 	color: #f1eceb;
 	text-align: left;
-  padding-top: 20px;
+	padding-top: 20px;
 }
 .projectDescription {
 	font-size: 1rem;
@@ -33,13 +33,15 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-  background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
+	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-	transition: transform 0.3s ease, background 0.3s ease;
-  padding: 20px 0 20px 15px;
+	transition:
+		transform 0.3s ease,
+		background 0.3s ease;
+	padding: 20px 0 20px 15px;
 }
 .sliderWrapper:hover {
-  background: linear-gradient(to bottom, #1a1516, #6a6e73 50%, #1a1516);
+	background: linear-gradient(to bottom, #1a1516, #6a6e73 50%, #1a1516);
 	transform: translateY(-5px);
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
@@ -85,12 +87,11 @@
 
 .slider {
 	display: flex;
-  align-items: center;
+	align-items: center;
 	gap: 20px;
 	overflow-x: auto; /* Включаем прокрутку по горизонтали */
 	scroll-behavior: smooth; /* Плавная прокрутка */
 	max-width: 100%;
-
 }
 
 .slider::-webkit-scrollbar {
@@ -109,7 +110,9 @@
 	overflow: hidden;
 	background-color: #fafafa;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-	transition: transform 0.3s ease, background 0.3s ease;
+	transition:
+		transform 0.3s ease,
+		background 0.3s ease;
 	width: 245px; /* Фиксированная ширина контейнера */
 	height: 150px; /* Фиксированная высота контейнера */
 	cursor: pointer;
@@ -122,7 +125,6 @@
 	transform: translateY(-5px);
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-
 
 /* Картинка внутри контейнера */
 .drawingImage {
@@ -152,7 +154,7 @@
 }
 .modal {
 	position: fixed; /* Фиксированное положение относительно экрана */
-  padding: 20px;
+	padding: 20px;
 	top: 50%; /* Центрирование по вертикали */
 	left: 50%; /* Центрирование по горизонтали */
 	transform: translate(-50%, -50%); /* Сдвиг для полного центрирования */
