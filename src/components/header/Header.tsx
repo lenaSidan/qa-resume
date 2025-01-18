@@ -18,12 +18,12 @@ function Header(): JSX.Element {
 				<ul className={styles.navList}>
 					<li>
 						<NavLink
-							to="/about"
+							to="/resume"
 							className={({ isActive }) =>
 								isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
 							}
 						>
-							{t('AboutMe').toUpperCase()}
+							{t('Resume').toUpperCase()}
 						</NavLink>
 					</li>
 					<li>

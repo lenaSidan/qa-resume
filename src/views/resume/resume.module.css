@@ -1,0 +1,285 @@
+.resumeSection {
+	padding: 30px 0 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: 300;
+	color: #f1eceb;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.block {
+	width: 100%;
+	max-width: 1200px;
+	margin-bottom: 0;
+}
+
+.textBox {
+	width: 100%;
+	max-width: 1200px;
+	text-align: left;
+	display: flex;
+	margin-top: 20px;
+}
+.textBox2 {
+	width: 100%;
+	max-width: 1200px;
+	text-align: left;
+	display: flex;
+	margin-top: 20px;
+}
+
+.codeDivider {
+	font-family: 'Courier New', monospace;
+	color: #8d8d8d;
+	font-size: 0.9rem;
+	text-align: center;
+	margin: 20px 0;
+}
+.categoryTitle {
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #e05d00;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.resumeList {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.resumeCard {
+	width: 100%;
+	max-width: 1200px;
+	background-color: #4c5053;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 30px 0 0 0;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	text-align: left;
+	border-left: 2px solid #e05d00;
+	transition:
+		transform 0.3s ease,
+		background 0.3s ease,
+		border-left-color 0.3s ease;
+}
+
+.resumeCard:hover {
+	transform: translateY(-5px);
+	/* background: linear-gradient(to top, #5a5e62, #3a3d40); */
+}
+
+.cardTitle {
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: #e05d00;
+	margin-bottom: 20px;
+}
+
+.cardContent {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.cardContent2 {
+	display: flex;
+	flex-direction: column;
+}
+.border {
+	border-left: 1px solid #e05d00;
+	padding-left: 20px;
+	transition:
+		transform 0.3s ease,
+		background 0.3s ease,
+		border-left-color 0.3s ease;
+}
+.jobBlock {
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.jobBlock2 {
+	padding-bottom: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.jobBlock:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.jobTitle {
+	font-size: 1.3rem;
+	font-weight: 300;
+	color: #ffffff;
+	margin: 0;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+}
+.jobTitle2 {
+	font-size: 1.3rem;
+	font-weight: 300;
+	color: #f1eceb;
+	margin: 0;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+}
+.company {
+	font-size: 1rem;
+	color: #a3a3a3;
+	margin-bottom: 5px;
+}
+
+.period {
+	font-size: 0.8rem;
+	color: #a3a3a3;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.descriptionList {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+/* .descriptionList li {
+	position: relative;
+	padding-left: 25px;
+	font-size: 0.9rem;
+	color: #d1d1d1;
+	margin-bottom: 5px;
+	line-height: 1.5;
+}
+
+.descriptionList li::before {
+	content: '=> ';
+	position: absolute;
+	left: 0;
+	color: #e05d00;
+	font-weight: bold;
+} */
+.descriptionList {
+	list-style-type: disc;
+	color: #e05d00;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.descriptionList li {
+	font-size: 0.9rem;
+	color: #d1d1d1; /* Цвет текста */
+	margin-bottom: 5px; /* Расстояние между пунктами списка */
+	line-height: 1.5; /* Межстрочный интервал */
+}
+
+.descriptionList li::before {
+	content: ''; /* Убираем стрелку или любые другие символы */
+}
+.descriptionList li::marker {
+	color: #e05d00; /* Цвет маркеров (точек) */
+	font-weight: bold; /* Жирные точки (если нужно) */
+}
+
+.brace {
+	color: #e05d00;
+	font-weight: 300;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.bracket {
+	color: #e05d00;
+	font-weight: 300;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.colon {
+	color: #8d8d8d;
+	font-weight: bold;
+}
+
+.comma {
+	color: #8d8d8d;
+}
+
+.key {
+	color: #e05d00;
+	font-weight: 300;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.value {
+	color: #d1d1d1;
+}
+
+.company2 {
+	color: #f1eceb;
+	font-size: 1rem;
+}
+.location2 {
+	color: #f1eceb;
+	font-size: 0.8rem;
+}
+.period2 {
+	color: #f1eceb;
+	font-size: 0.8rem;
+	font-style: italic;
+}
+.toggleContainer {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.subtitle {
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.2rem;
+	color: #e05d00;
+	margin-bottom: 0;
+}
+.subtitle2 {
+	color: #f1eceb;
+	font-size: 0.8rem;
+	font-weight: 300;
+	margin-right: 10px;
+}
+
+.toggleText {
+	color: #8d8d8d;
+	font-size: 1rem;
+	font-weight: 400;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.toggleText:hover {
+	color: #ffffff;
+  font-weight: 400;
+}
+
+.toggleText.active {
+	color: #e05d00;
+	font-weight: 400;
+}
+
+.divider {
+	color: #8d8d8d;
+	font-size: 1rem;
+	margin: 0 5px;
+}

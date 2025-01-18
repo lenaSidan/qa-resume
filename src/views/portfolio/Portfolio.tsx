@@ -13,13 +13,11 @@ function Portfolio(): JSX.Element {
 	return (
 		<section className={styles.portfolioSection} id="portfolio">
 			{/* Общий заголовок */}
-			<div className={styles.title}>
-				{t('Portfolio').toUpperCase()}
-				<div className={styles.descriptionText}>
-					{t('portfolioDescriptionPart1')}
-					<b>{t('portfolioDescriptionPart2')}</b>
-					{t('portfolioDescriptionPart3')}
-				</div>
+			<div className={styles.title}>{t('Portfolio').toUpperCase()}</div>
+			<div className={styles.descriptionText}>
+				{t('portfolioDescriptionPart1')}
+				<b>{t('portfolioDescriptionPart2')}</b>
+				{t('portfolioDescriptionPart3')}
 			</div>
 
 			{/* Категория: Сайты */}

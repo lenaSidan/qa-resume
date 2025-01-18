@@ -4,13 +4,13 @@ import './App.css';
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie';
 import Loading from './components/loading/Loading';
-import AboutMe from './views/aboutMe/AboutMe';
 import Contact from './views/contact/Contact';
 import MainSection from './views/mainSection/MainSection';
 import Skills from './views/skills/Skills';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Portfolio from './views/portfolio/Portfolio';
+import Resume from './views/resume/Resume';
 
 function App(): JSX.Element {
 	const { i18n } = useTranslation();
@@ -29,7 +29,7 @@ function App(): JSX.Element {
 					<Header />
 					<Routes>
 						<Route path="/" element={<MainSection />} />
-						<Route path="/about" element={<AboutMe />} />
+						<Route path="/resume" element={<Resume />} />
 						<Route path="/skills" element={<Skills />} />
 						<Route path="/portfolio" element={<Portfolio />} />
 						<Route path="/contact" element={<Contact />} />
