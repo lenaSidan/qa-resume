@@ -24,6 +24,7 @@
 		"@vitejs/plugin-react": "^4.0.0",
 		"axios": "^1.7.2",
 		"dom-to-image-more": "^3.4.5",
+		"emailjs-com": "^3.2.0",
 		"html-to-image": "^1.11.11",
 		"i18next": "^23.11.0",
 		"js-cookie": "^3.0.5",

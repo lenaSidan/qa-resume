@@ -33,6 +33,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	border-radius: 10px;
 	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 	transition:

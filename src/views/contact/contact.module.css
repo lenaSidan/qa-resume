@@ -1,0 +1,230 @@
+.contactMeBlock {
+	padding: 30px 0 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+.contactMeSection {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.title {
+	font-size: 2rem;
+	font-weight: 300;
+	color: #f1eceb;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.contactBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 10px;
+	padding: 20px;
+	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	transition:
+		transform 0.3s ease,
+		background 0.3s ease;
+	height: 100%;
+	position: relative;
+}
+.contactBlock:hover {
+	background: linear-gradient(to bottom, #1a1516, #6a6e73 50%, #1a1516);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.inputField,
+.textArea {
+	width: 90%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px;
+	background: #3a3d40;
+	color: #f1eceb;
+}
+
+.textArea {
+	height: 150px;
+}
+
+.submitButton {
+	display: inline-block;
+	background: #e05d00;
+	color: #f1eceb;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 350;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: background 0.3s ease;
+	margin-top: auto;
+	cursor: pointer;
+}
+
+.submitButton:hover {
+	background: #ff7f3f;
+}
+
+.contactInfo {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contactBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+.addressBox {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	justify-content: center;
+	margin: 0;
+	padding: 5px 0;
+	align-items: flex-end;
+}
+.address {
+	color: #e05d00;
+	text-decoration: none;
+	margin: 0 0 0 5px;
+	transition: color 0.3s ease;
+}
+.mailBox {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	justify-content: center;
+	margin: 20px 0;
+	padding: 5px 0;
+	align-items: flex-end;
+}
+.contactText {
+	color: #f1eceb;
+	font-size: 0.8rem;
+	font-weight: 300;
+	margin: 0;
+	padding: 0 5px 1px 0;
+}
+.socialLinks a {
+	color: #e05d00;
+	text-decoration: none;
+	margin: 0;
+	padding-left: 5px;
+	transition: color 0.3s ease;
+	font-size: 1rem;
+}
+
+.socialLinks a:hover {
+	color: #ff7f3f;
+}
+.tag a {
+	color: #e05d00;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: color 0.3s ease;
+}
+.divider {
+	color: #e05d00;
+	font-size: 1rem;
+	margin: 0 5px 0 10px;
+}
+
+.successMessage {
+	color: #2f2f2f;
+	background-color: #aeaeae;
+	border: 1px solid #aeaeae;
+	padding: 10px 15px;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.errorMessage {
+	color: #f44336;
+	background-color: #f2dede;
+	border: 1px solid #ebccd1;
+	padding: 10px 15px;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.email {
+	color: #e05d00;
+	text-decoration: none;
+	font-size: 1rem;
+	padding-left: 5px;
+}
+
+.email:hover {
+	color: #ff7f3f;
+	text-decoration: underline;
+}
+
+.inputWrapper {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.clearFieldButton {
+	position: absolute;
+	top: 5px; 
+	right: 10px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #e05d00;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.clearFieldButton:hover {
+	color: #ff7f3f;
+}
+
+.inputField {
+	width: calc(100% - 40px);
+	padding: 10px;
+	padding-right: 40px;
+}
+
+.textArea {
+	width: calc(100% - 40px);
+	padding: 10px;
+	padding-right: 40px;
+	height: 150px;
+	resize: none;
+}
+.contactLink {
+	color: #e05d00;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+	color: #ff7f3f;
+}

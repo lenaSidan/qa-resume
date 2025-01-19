@@ -1,6 +1,7 @@
 import 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './footer.module.css';
+import { Link } from 'react-router-dom';
 
 function Footer(): JSX.Element {
 	const { t } = useTranslation();
@@ -23,12 +24,13 @@ function Footer(): JSX.Element {
 						<img src="/github-icon.png" alt="GitHub" className={styles.icon} />
 						<span className={styles.tag}>&lt;/GitHub&gt;</span>
 					</a>
-					<a href="mailto:l.sidan@gmx.de" target="_blank" rel="noopener noreferrer">
+					<Link to="/contact">
 						<span className={styles.tag}>&lt;Email&gt;</span>
 						<img src="/email-icon.png" alt="Email" className={styles.icon} />
 						<span className={styles.tag}>&lt;/Email&gt;</span>
-					</a>
+					</Link>
 				</div>
+
 				<p className={styles.info}>
 					&copy; {new Date().getFullYear()} ELENA SIDANOVA — {t('AllRightsReserved').toUpperCase()}
 				</p>

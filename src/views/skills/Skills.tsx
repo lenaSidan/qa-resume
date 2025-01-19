@@ -14,7 +14,15 @@ const skills = [
 	},
 	{
 		category: 'Tools',
-		items: ['Git', 'Figma', 'VS Code', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'],
+		items: [
+			'Git',
+			'Figma',
+			'VS Code',
+			'Adobe Photoshop',
+			'Adobe Illustrator',
+			'Adobe InDesign',
+			'After Effects',
+		],
 	},
 ];
 
