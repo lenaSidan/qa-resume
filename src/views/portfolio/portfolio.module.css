@@ -25,15 +25,16 @@
 	max-width: 1200px;
 	text-align: center;
 	font-size: 1rem;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-weight: 200;
+	
+	font-weight: 400;
 	line-height: 1.8;
 	margin-top: 20px;
 	color: #8d8d8d;
+
 }
 
 .descriptionText b {
-	font-weight: 500;
+	font-weight: 400;
 	color: #f1eceb;
 }
 .textBox {
@@ -154,15 +155,16 @@
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 	transition: background 0.3s ease;
 	margin-top: auto;
+	cursor: pointer;
 }
 
 .projectLink:hover {
 	background-color: #8d8d8d;
 }
 .codeDivider {
-	font-family: 'Courier New', monospace; /* Моноширинный шрифт для кода */
-	color: #8d8d8d; /* Нейтральный серый цвет */
-	font-size: 0.9rem; /* Небольшой размер шрифта */
-	text-align: center; /* Центрирование текста */
-	margin: 20px 0; /* Отступы сверху и снизу */
+	font-family: 'Courier New', monospace;
+	color: #8d8d8d;
+	font-size: 0.9rem;
+	text-align: center; 
+	margin: 20px 0;
 }

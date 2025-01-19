@@ -1,6 +1,7 @@
 import 'react';
 import styles from './mainSection.module.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 function MainSection(): JSX.Element {
 	const { t } = useTranslation();
@@ -25,9 +26,9 @@ function MainSection(): JSX.Element {
 						>
 							{t('DownloadResume').toUpperCase()}
 						</a>
-						<a href="#contact" className={styles.buttonSecondary}>
+						<Link to="/contact" className={styles.buttonSecondary}>
 							{t('Contact').toUpperCase()}
-						</a>
+						</Link>
 					</div>
 				</div>
 				<div className={styles.imageBox}>

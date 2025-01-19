@@ -13,37 +13,6 @@ function Resume(): JSX.Element {
 	// Состояние для переключения стиля
 	const [isCodeStyle, setIsCodeStyle] = useState(true);
 
-	// Функция для рендеринга блока (универсальная для опыта и образования)
-	const renderBlock = (
-		titleKey: string,
-		endKey: string,
-		ClassicComponent: React.FC,
-		CodeComponent: React.FC
-	): JSX.Element => (
-		<>
-			<div className={styles.block}>
-				<div className={styles.textBox}>
-					<p className={styles.subtitle}>
-						{t(isCodeStyle ? titleKey : `${titleKey}2`).toUpperCase()}
-					</p>
-				</div>
-				{isCodeStyle ? <ClassicComponent /> : <CodeComponent />}
-			</div>
-			{!isCodeStyle && (
-				<>
-					<div className={styles.textBox}>
-						<p className={styles.subtitle}>{t(`${titleKey}2/>`).toUpperCase()}</p>
-					</div>
-					<div className={styles.codeDivider}>
-						<span>
-							{`/* --------------------------- End of ${t(titleKey)} --------------------------- /*`}
-						</span>
-					</div>
-				</>
-			)}
-		</>
-	);
-
 	return (
 		<section className={styles.resumeSection} id="resume">
 			<div className={styles.title}>{t('resume').toUpperCase()}</div>
@@ -66,10 +35,48 @@ function Resume(): JSX.Element {
 			</div>
 
 			{/* Блок опыта */}
-			{renderBlock('Experience', 'Experience/>', ExperienceClassic, Experience)}
+			<div className={styles.block}>
+				<div className={styles.textBox}>
+					<p className={styles.subtitle}>
+						{t(isCodeStyle ? 'Experience' : 'Experience2').toUpperCase()}
+					</p>
+				</div>
+				{isCodeStyle ? <ExperienceClassic /> : <Experience />}
+				{!isCodeStyle && (
+					<>
+						<div className={styles.textBox}>
+							<p className={styles.subtitle}>{t('Experience2/>').toUpperCase()}</p>
+						</div>
+						<div className={styles.codeDivider}>
+							<span>
+								{`/* --------------------------- End of ${t('Experience')} --------------------------- /*`}
+							</span>
+						</div>
+					</>
+				)}
+			</div>
 
 			{/* Блок образования */}
-			{renderBlock('Education', 'Education/>', EducationClassic, Education)}
+			<div className={styles.block}>
+				<div className={styles.textBox}>
+					<p className={styles.subtitle}>
+						{t(isCodeStyle ? 'Education' : 'Education2').toUpperCase()}
+					</p>
+				</div>
+				{isCodeStyle ? <EducationClassic /> : <Education />}
+				{!isCodeStyle && (
+					<>
+						<div className={styles.textBox}>
+							<p className={styles.subtitle}>{t('Education2/>').toUpperCase()}</p>
+						</div>
+						<div className={styles.codeDivider}>
+							<span>
+								{`/* --------------------------- End of ${t('Education')} --------------------------- /*`}
+							</span>
+						</div>
+					</>
+				)}
+			</div>
 		</section>
 	);
 }
