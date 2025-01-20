@@ -66,12 +66,13 @@
 	.dropdownHeader {
 		width: 35px;
 		height: 15px;
-		font-size: 10px;
+		font-size: 16px;
 		padding: 0 6px;
-		color: #000000;
+		color: #f1eceb;
+		margin-right: 0;
 	}
 	.dropdownHeader:hover {
-		color: #313131;
+		color: #e05d00;
 	}
 	.imageBox {
 		display: none;
@@ -81,29 +82,29 @@
 		display: flex;
 		flex-direction: column;
 		position: absolute;
-		font-size: 8px;
+		font-size: 14px;
 		top: 100%;
 		left: 50%;
 		transform: translateX(-50%);
 		width: 50%;
-		padding: 0 0 5px 0;
+		padding: 6px 0 5px 0;
 		z-index: 101;
-		background-color: rgba(255, 255, 255, 0.9);
+		color: #f1eceb;
 		border-radius: 4px;
 	}
 
 	.dropdownListActive button {
-		font-size: 8px;
+		font-size: 12px;
 		padding: 0 8px;
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
-		color: #333;
+		color: #f1eceb;
 		text-align: center;
 	}
 
 	.dropdownListActive button:hover {
-		color: #007b32;
+		color: #e05d00;
 		background-color: rgba(0, 0, 0, 0.1);
 	}
 }

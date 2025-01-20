@@ -5,16 +5,19 @@ body {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+	overflow: visible;
 }
 
 #root {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	overflow: visible;
 }
 
 .mainContent {
 	flex: 1;
+	overflow: visible;
 }
 
 

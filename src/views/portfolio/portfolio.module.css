@@ -168,3 +168,91 @@
 	text-align: center; 
 	margin: 20px 0;
 }
+@media (max-width: 768px) {
+	.portfolioSection {
+		padding: 40px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.textBox,
+	.textBox2 {
+		max-width: 90%;
+		margin-top: 20px;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.title {
+		font-size: 1.6rem;
+	}
+
+	.descriptionText {
+		width: 90%;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		margin-top: 15px;
+	}
+
+	.subtitle {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.sitesBlock {
+		margin: 20px 0;
+	}
+
+	.projectGrid {
+		grid-template-columns: 1fr;
+		gap: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.projectCard {
+		width: 80%;
+		padding: 15px;
+		border-radius: 8px;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.mediaContainer {
+		border-radius: 6px;
+	}
+
+	.projectImage {
+		transition: none; /* Убираем увеличение при наведении для удобства */
+	}
+
+	.projectInfo {
+		padding: 15px 0;
+	}
+
+	.projectTitle {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	.projectDescription {
+		font-size: 0.9rem;
+		margin-bottom: 15px;
+		text-align: justify;
+	}
+
+	.projectLink {
+		padding: 8px 15px;
+		font-size: 0.9rem;
+	}
+
+	.codeDivider {
+		display: none;
+	}
+
+}

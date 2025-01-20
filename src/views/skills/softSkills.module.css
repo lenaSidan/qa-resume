@@ -15,7 +15,8 @@
 }
 
 .softSkillsCard {
-	width: 100%;
+	box-sizing: border-box;
+	width: calc(100% - 40px);
 	max-width: 1200px;
 	flex-direction: column;
 	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
@@ -91,4 +92,47 @@
 	font-size: 1rem;
 	font-weight: 400;
 	color: #e05d00;
+}
+@media (max-width: 768px) {
+	.softSkillsSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 90%;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 30px 0 50px 0;
+	}
+
+	.title {
+		font-size: 1.6rem;
+		margin-bottom: 15px;
+	}
+
+	.softSkillsCard {
+		width: 100%;
+		padding: 15px;
+		border-radius: 8px;
+	}
+
+	.skillHeader,
+	.skillFooter {
+		font-size: 0.9rem;
+	}
+
+	.skillBody {
+		gap: 10px;
+		margin: 15px 0;
+	}
+
+	.skillItem {
+		padding: 8px 10px;
+		font-size: 0.8rem;
+	}
+
+	.skillItem::before {
+		font-size: 1rem;
+		margin-right: 5px;
+	}
 }

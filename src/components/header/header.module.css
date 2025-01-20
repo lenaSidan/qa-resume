@@ -2,10 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	position: relative;
 	padding: 5px 0;
-	/* background-color: #100d0e;
- box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
-	/* position: fixed; */
 	width: 100%;
 	top: 0;
 	z-index: 1000;
@@ -37,7 +35,9 @@
 	height: 60px;
 	object-fit: contain;
 }
-
+.burgerMenu {
+display: none;
+}
 .nav {
 	display: flex;
 }
@@ -106,4 +106,96 @@
 	color: #b0b0b0;
 	text-decoration: underline;
 	opacity: 0.8;
+}
+@media (max-width: 768px) {
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 10px 15px;
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		overflow: visible;
+		z-index: 1000;
+	}
+
+	.logo {
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.logoImage {
+		height: 40px;
+	}
+
+	.burgerMenu {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		cursor: pointer;
+	}
+
+	.burgerLine {
+		width: 25px;
+		height: 3px;
+		background-color: #f1eceb;
+		margin: 4px 0;
+	}
+	.rightSection {
+		width: 20%;
+		display: flex;
+		justify-content: flex-end;
+		padding: 0;
+	}
+	.languageBox {
+		font-size: 0.9rem;
+		color: #f1eceb;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+
+	.nav {
+		display: none;
+		position: absolute;
+		top: 50px;
+		align-items: center;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px 15px;
+	}
+
+	.navOpen {
+		display: flex;
+	}
+
+	.navList {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		gap: 15px;
+		list-style: none;
+	}
+
+	.navLink {
+		font-size: 0.7rem;
+		color: #f1eceb;
+		text-decoration: none;
+		text-align: left;
+		padding: 10px 0;
+		width: 100%;
+	}
+
+	.navLink:hover {
+		color: #e05d00;
+	}
 }

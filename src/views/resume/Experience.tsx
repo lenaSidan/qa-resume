@@ -91,12 +91,14 @@ function Experience(): JSX.Element {
 								&nbsp;&nbsp;<span className={styles.key}>{t('Highlights')}</span>
 								<span className={styles.colon}>:</span> <span className={styles.bracket}>[</span>
 							</p>
-							{item.descriptionKeys.map((descKey, i) => (
-								<p key={i} className={styles.codeLine}>
-									&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.value}>{t(descKey)}</span>
-									{i < item.descriptionKeys.length - 1 && <span className={styles.comma}>,</span>}
-								</p>
-							))}
+							<div className={styles.descriptionList2}>
+								{item.descriptionKeys.map((descKey, i) => (
+									<p key={i} className={styles.codeLine}>
+										&nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.value}>{t(descKey)}</span>
+										{i < item.descriptionKeys.length - 1 && <span className={styles.comma}>,</span>}
+									</p>
+								))}
+							</div>
 							<p className={styles.codeLine}>
 								&nbsp;&nbsp;
 								<span className={styles.bracket}>{']'}</span>
