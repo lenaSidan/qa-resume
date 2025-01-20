@@ -58,7 +58,7 @@ function Skills(): JSX.Element {
 					</div>
 				</section>
 			</div>
-			<div>
+			<div className={styles.softSkillBox}>
 				<SoftSkills />
 			</div>
 		</div>

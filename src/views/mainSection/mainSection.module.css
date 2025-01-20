@@ -4,7 +4,6 @@
 	justify-content: center;
 	height: 100%;
 }
-	
 
 .content {
 	max-width: 1200px;
@@ -92,4 +91,71 @@
 .buttonSecondary:hover {
 	background-color: #ff985340;
 	color: #fa873a;
+}
+@media (max-width: 768px) {
+	.mainSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 20px 0 20px;
+		
+	}
+
+	.content {
+		flex-direction: column-reverse; 
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0; 
+		margin-bottom: 40px; 
+		align-items: center;
+	}
+
+	.imageBox {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.photo {
+		width: 200px; 
+		height: 200px;
+	}
+
+	.name {
+		font-size: 2.0rem;
+		margin-bottom: 20px; 
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	.description {
+		font-size: 0.8rem;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		width: 90%;
+	}
+
+	.buttonPrimary,
+	.buttonSecondary {
+		width:90%;
+		text-align: center;
+	}
 }

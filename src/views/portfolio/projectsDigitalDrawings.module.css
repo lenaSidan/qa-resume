@@ -4,7 +4,7 @@
 	gap: 40px;
 	padding: 0;
 	max-width: 1200px;
-	margin: 0 auto; /* Центрирование */
+	margin: 0 auto;
 }
 
 .projectBlock {
@@ -28,7 +28,7 @@
 	margin: 0 0 20px 0;
 	text-align: justify;
 }
-/* Обёртка для прокрутки */
+
 .sliderWrapper {
 	display: flex;
 	align-items: center;
@@ -61,12 +61,12 @@
 	align-items: center;
 }
 .icon {
-	font-size: 3rem !important; /* Увеличиваем базовый размер иконки */
+	font-size: 3rem !important;
 	color: #e05d00;
-	width: auto; /* Устанавливаем ширину автоматически */
-	height: auto; /* Устанавливаем высоту автоматически */
-	transform: scaleY(1.2); /* Увеличиваем высоту на 20% */
-	display: flex; /* Выравниваем иконку внутри контейнера */
+	width: auto;
+	height: auto;
+	transform: scaleY(1.2);
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
@@ -79,8 +79,8 @@
 	color: #e05d00;
 }
 .separator {
-	color: #e05d00; /* Цвет символа */
-	font-size: 4rem; /* Увеличенный размер символа */
+	color: #e05d00;
+	font-size: 4rem;
 	text-align: center;
 	margin-bottom: 20px;
 	margin-left: 20px;
@@ -90,18 +90,18 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	overflow-x: auto; /* Включаем прокрутку по горизонтали */
-	scroll-behavior: smooth; /* Плавная прокрутка */
+	overflow-x: auto;
+	scroll-behavior: smooth;
 	max-width: 100%;
 }
 
 .slider::-webkit-scrollbar {
-	display: none; /* Скрыть скроллбар для WebKit-браузеров (Chrome, Safari) */
+	display: none;
 }
 
 .slider {
-	-ms-overflow-style: none; /* Скрыть скроллбар для IE и Edge */
-	scrollbar-width: none; /* Скрыть скроллбар для Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 .drawingItem {
@@ -114,8 +114,8 @@
 	transition:
 		transform 0.3s ease,
 		background 0.3s ease;
-	width: 245px; /* Фиксированная ширина контейнера */
-	height: 150px; /* Фиксированная высота контейнера */
+	width: 245px;
+	height: 150px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -127,15 +127,13 @@
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Картинка внутри контейнера */
 .drawingImage {
 	max-width: 100%;
 	max-height: 100%;
-	object-fit: contain; /* Не обрезать изображение */
+	object-fit: contain;
 	transition: transform 0.3s ease;
 }
 
-/* Описание */
 .drawingDescription {
 	position: absolute;
 	bottom: 0;
@@ -151,46 +149,119 @@
 }
 
 .drawingItem:hover .drawingDescription {
-	opacity: 1; /* Появление описания */
+	opacity: 1;
 }
 .modal {
-	position: fixed; /* Фиксированное положение относительно экрана */
+	position: fixed;
 	padding: 20px;
-	top: 50%; /* Центрирование по вертикали */
-	left: 50%; /* Центрирование по горизонтали */
-	transform: translate(-50%, -50%); /* Сдвиг для полного центрирования */
-	width: 700px; /* Фиксированная ширина модального окна */
-	height: 400px; /* Фиксированная высота модального окна */
-	background: #f1eceb; /* Светлый фон для окна */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 400px;
+	background: #f1eceb;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 10px; /* Закруглённые углы */
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Тень вокруг окна */
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 	z-index: 1000;
 	cursor: pointer;
 }
 
 .modalImage {
-	max-width: 100%; /* Масштабируем изображение по ширине окна */
-	max-height: 100%; /* Масштабируем изображение по высоте окна */
-	object-fit: contain; /* Сохраняем пропорции изображения */
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 	border-radius: 8px;
 }
 .closeButton {
-	position: absolute; /* Расположить относительно модального окна */
-	top: 10px; /* Отступ сверху */
-	right: 10px; /* Отступ справа */
-	background: none; /* Убираем фон кнопки */
-	border: none; /* Убираем рамку кнопки */
-	font-size: 34px; /* Размер крестика */
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	font-size: 34px;
 	font-weight: bold;
-	color: #e05d00; /* Цвет крестика */
+	color: #e05d00;
 	cursor: pointer;
-	z-index: 1100; /* Поверх модального окна */
+	z-index: 1100;
 	transition: color 0.2s ease;
 }
 
 .closeButton:hover {
-	color: #b9540c; /* Красный цвет при наведении */
+	color: #b9540c;
+}
+@media (max-width: 768px) {
+	.projectsContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.projectBlock {
+		width: 90%;
+		gap: 15px;
+	}
+
+	.projectTitle {
+		font-size: 1rem;
+		padding-top: 10px;
+	}
+
+	.projectDescription {
+		font-size: 0.9rem;
+		line-height: 1.4;
+		margin: 0 0 10px 0;
+	}
+
+	.sliderWrapper {
+		padding: 10px;
+		border-radius: 8px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.slider {
+		gap: 10px;
+	}
+
+	.drawingItem {
+		width: 100px;
+		height: 50px;
+		border-radius: 8px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.drawingDescription {
+		width: 90%;
+		font-size: 0.8rem;
+		padding: 5px;
+	}
+
+	.modal {
+		width: 85%;
+		height: auto;
+		padding: 15px;
+	}
+
+	.modalImage {
+		max-width: 70%;
+		max-height: auto;
+		border-radius: 6px;
+	}
+
+	.closeButton {
+		font-size: 28px;
+		top: 5px;
+		right: 5px;
+	}
+	.icon {
+		font-size: 2rem !important;
+	}
+	.separator {
+		font-size: 3rem;
+	}
 }

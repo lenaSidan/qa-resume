@@ -1,4 +1,4 @@
-import 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import styles from './header.module.css';
@@ -6,6 +6,9 @@ import LanguageSelector from './LanguageSelector';
 
 function Header(): JSX.Element {
 	const { t } = useTranslation();
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
 
 	return (
 		<header className={styles.header}>
@@ -14,7 +17,12 @@ function Header(): JSX.Element {
 					<img src="/logoSidan.png" alt={t('Sidanova')} className={styles.logoImage} />
 				</a>
 			</div>
-			<nav className={styles.nav}>
+			<div className={styles.burgerMenu} onClick={toggleMenu}>
+				<div className={styles.burgerLine}></div>
+				<div className={styles.burgerLine}></div>
+				<div className={styles.burgerLine}></div>
+			</div>
+			<nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
 				<ul className={styles.navList}>
 					<li>
 						<NavLink

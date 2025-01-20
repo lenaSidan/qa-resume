@@ -83,7 +83,6 @@
 
 .resumeCard:hover {
 	transform: translateY(-5px);
-	/* background: linear-gradient(to top, #5a5e62, #3a3d40); */
 }
 
 .cardTitle {
@@ -136,7 +135,7 @@
 	font-weight: 300;
 	color: #f1eceb;
 	margin: 0;
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
 }
 .company {
 	font-size: 1rem;
@@ -157,22 +156,6 @@
 	margin: 0;
 }
 
-/* .descriptionList li {
-	position: relative;
-	padding-left: 25px;
-	font-size: 0.9rem;
-	color: #d1d1d1;
-	margin-bottom: 5px;
-	line-height: 1.5;
-}
-
-.descriptionList li::before {
-	content: '=> ';
-	position: absolute;
-	left: 0;
-	color: #e05d00;
-	font-weight: bold;
-} */
 .descriptionList {
 	list-style-type: disc;
 	color: #e05d00;
@@ -182,17 +165,17 @@
 
 .descriptionList li {
 	font-size: 0.9rem;
-	color: #d1d1d1; /* Цвет текста */
-	margin-bottom: 5px; /* Расстояние между пунктами списка */
-	line-height: 1.5; /* Межстрочный интервал */
+	color: #d1d1d1;
+	margin-bottom: 5px;
+	line-height: 1.5;
 }
 
 .descriptionList li::before {
-	content: ''; /* Убираем стрелку или любые другие символы */
+	content: '';
 }
 .descriptionList li::marker {
-	color: #e05d00; /* Цвет маркеров (точек) */
-	font-weight: bold; /* Жирные точки (если нужно) */
+	color: #e05d00;
+	font-weight: bold;
 }
 
 .brace {
@@ -219,6 +202,7 @@
 .key {
 	color: #e05d00;
 	font-weight: 300;
+	font-size: 1rem;
 	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
 }
 
@@ -270,7 +254,7 @@
 
 .toggleText:hover {
 	color: #ffffff;
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .toggleText.active {
@@ -282,4 +266,112 @@
 	color: #8d8d8d;
 	font-size: 1rem;
 	margin: 0 5px;
+}
+@media (max-width: 768px) {
+	.resumeSection {
+		padding: 40px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	.section {
+		padding: 0;
+		width: 90%;
+	}
+
+	.title {
+		font-size: 1.6rem; 
+	}
+	.block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textBox,
+	.textBox2 {
+		width: 90%;
+		padding: 0 10px;
+		margin: 0;
+	}
+
+	.resumeList {
+		gap: 15px;
+	}
+
+	.resumeCard {
+		padding: 15px;
+		margin: 20px 0 20px 0;
+		width: 90%;
+	}
+
+	.cardTitle {
+		font-size: 1.5rem;
+	}
+
+	.cardContent {
+		gap: 15px;
+	}
+
+	.jobBlock,
+	.jobBlock2 {
+		padding-bottom: 15px;
+	}
+
+	.key {
+		font-size: 0.8rem;
+	}
+	.jobTitle,
+	.jobTitle2 {
+		font-size: 1.1rem;
+	}
+
+	.company,
+	.company2,
+	.period,
+	.period2 {
+		font-size: 0.9rem;
+	}
+
+	.descriptionList {
+		padding-left: 15px;
+	}
+	.descriptionList2 {
+		text-align: left;
+		padding-left: 15px;
+	}
+	.value {
+		text-align: left;
+	}
+
+	.descriptionList li,
+	.descriptionList2 p {
+		font-size: 0.8rem;
+		line-height: 1.4;
+		text-align: left;
+	}
+
+	.subtitle {
+		font-size: 1rem;
+	}
+
+	.subtitle2 {
+		font-size: 0.7rem;
+	}
+
+	.toggleText {
+		font-size: 0.9rem;
+	}
+
+	.divider {
+		font-size: 0.8rem;
+	}
+	.codeDivider {
+		display: none;
+	}
 }

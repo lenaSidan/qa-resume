@@ -55,3 +55,50 @@
 .tag {
 	font-size: 1.0rem;
 }
+@media (max-width: 768px) {
+	.footer {
+		text-align: center;
+		padding: 10px 10px 15px 10px;
+		box-sizing: border-box;
+	}
+
+	.container {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.socialLinks {
+		flex-direction: row; /* Вертикальное расположение ссылок */
+		gap: 15px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.socialLinks a {
+		display: flex; /* Горизонтальное расположение внутри ссылки */
+		align-items: center;
+		justify-content: center;
+		gap: 10px; /* Расстояние между иконкой и текстом */
+		width: 100%; /* Ссылка растягивается на всю ширину */
+		padding: 0;
+		text-align: center; /* Центрируем текст */
+		text-decoration: none;
+	}
+
+	.socialLinks a .tag,
+	.socialLinks a span:not(:first-child) {
+		display: none; /* Скрываем <, </>, и дополнительный текст */
+	}
+
+	.icon {
+		width: 25px; /* Уменьшаем размер иконок */
+		height: 25px;
+	}
+
+	.info {
+		font-size: 0.6rem; /* Уменьшаем шрифт копирайта */
+		line-height: 1.2;
+		margin: 10px 0 0 0;
+	}
+}
+

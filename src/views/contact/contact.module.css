@@ -228,3 +228,96 @@
 .contactLink:hover {
 	color: #ff7f3f;
 }
+@media (max-width: 768px) {
+	.contactMeBlock {
+		padding: 40px 0;
+	}
+
+	.contactMeSection {
+		width: 90%;
+		padding: 0 15px;
+	}
+
+	.title {
+		font-size: 1.6rem;
+	}
+
+	.contactBlock {
+		padding: 15px;
+		border-radius: 8px;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.contactForm {
+		gap: 15px;
+	}
+
+	.inputField,
+	.textArea {
+		width: calc(100% - 30px);
+		padding: 10px;
+		font-size: 0.9rem;
+	}
+
+	.textArea {
+		height: 120px;
+	}
+
+	.submitButton {
+		padding: 8px 15px;
+		font-size: 0.9rem;
+	}
+
+	.contactBox {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.addressBox,
+	.mailBox {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.address {
+		font-size: 0.9rem;
+	}
+
+	.contactText {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	.socialLinks a {
+		font-size: 0.9rem;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.divider {
+		font-size: 0.8rem;
+		margin: 0 5px;
+	}
+
+	.successMessage,
+	.errorMessage {
+		font-size: 0.9rem;
+		padding: 10px;
+		margin: 15px 0;
+	}
+
+	.inputWrapper {
+		width: 100%;
+	}
+
+	.clearFieldButton {
+		top: 8px;
+		right: 8px;
+		font-size: 0.8rem;
+	}
+
+	.contactLink {
+		font-size: 0.9rem;
+	}
+}
