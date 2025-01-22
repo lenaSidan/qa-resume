@@ -52,7 +52,7 @@ const ProjectsDigitalDrawings: React.FC = () => {
 	const [activeImage, setActiveImage] = useState<string | null>(null);
 	const sliderRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-	// Закрытие модального окна при нажатии на "Escape"
+	// Close modal on "Escape" key press
 	useEffect(() => {
 		const handleKeyDown = (event: KeyboardEvent): void => {
 			if (event.key === 'Escape') {
@@ -66,7 +66,7 @@ const ProjectsDigitalDrawings: React.FC = () => {
 		};
 	}, []);
 
-	// Функция прокрутки
+	// Scroll function
 	const scroll = (index: number, direction: 'left' | 'right'): void => {
 		const ref = sliderRefs.current[index];
 		if (ref) {
@@ -86,7 +86,7 @@ const ProjectsDigitalDrawings: React.FC = () => {
 					<div className={styles.projectTitle}>{t(project.title)}</div>
 					<div className={styles.projectDescription}>{t(project.description)}</div>
 					<div className={styles.sliderWrapper}>
-						{/* Кнопка влево */}
+						{/* Scroll Left Button */}
 						<button
 							type="button"
 							className={`${styles.scrollButton} ${styles.left}`}
@@ -97,7 +97,7 @@ const ProjectsDigitalDrawings: React.FC = () => {
 							<ArrowBackIosIcon className={styles.icon} />
 						</button>
 
-						{/* Слайдер */}
+						{/* Slider */}
 						<div className={styles.slider} ref={(el) => (sliderRefs.current[index] = el)}>
 							{project.drawings.map((drawing, i) => (
 								<div
@@ -114,7 +114,7 @@ const ProjectsDigitalDrawings: React.FC = () => {
 							))}
 						</div>
 
-						{/* Кнопка вправо */}
+						{/* Scroll Right Button */}
 						<div className={styles.separatorIconBox}>
 							<span className={styles.separator}>/</span>
 							<button
@@ -131,27 +131,33 @@ const ProjectsDigitalDrawings: React.FC = () => {
 				</div>
 			))}
 
-			{/* Модальное окно */}
+			{/* Modal */}
 			{activeImage && (
-				<div className={styles.modal} onClick={() => setActiveImage(null)}>
-					<button
-						type="button"
-						className={styles.closeButton}
-						onClick={(e) => {
-							e.stopPropagation(); // Предотвращаем закрытие при нажатии на крестик
-							setActiveImage(null);
-						}}
-						aria-label="Close modal"
-					>
-						&times;
-					</button>
-					<img
-						src={activeImage}
-						alt="Full Drawing"
-						className={styles.modalImage}
-						onClick={() => setActiveImage(null)} // Закрытие при клике на изображение
-					/>
-				</div>
+				<>
+					{/* Backdrop */}
+					<div className={styles.modalBackdrop} onClick={() => setActiveImage(null)}></div>
+
+					{/* Modal Window */}
+					<div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+						<button
+							type="button"
+							className={styles.closeButton}
+							onClick={(e) => {
+								e.stopPropagation();
+								setActiveImage(null);
+							}}
+							aria-label="Close modal"
+						>
+							&times;
+						</button>
+						<img
+							src={activeImage}
+							alt="Full Drawing"
+							className={styles.modalImage}
+							onClick={() => setActiveImage(null)} // Закрытие при клике на изображение
+						/>
+					</div>
+				</>
 			)}
 		</div>
 	);

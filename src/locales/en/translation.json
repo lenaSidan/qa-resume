@@ -1,7 +1,7 @@
 {
 	"Sidanova": "Elena Sidanova",
 	"React": "Frontend Developer | React | Redux Toolkit",
-	"Description": "\"I create modern and functional websites that attract attention and are easy to navigate. Full-cycle development — from design to implementation. My work focuses on simplicity, aesthetics, and user-friendliness.\"",
+	"Description": "\"I create digital solutions that inspire and help businesses grow. From concept to implementation, I focus on every detail to transform your ideas into stylish and user-friendly projects.\"",
 	"DownloadResume": "Download Resume",
 	"Contact": "Contact Me",
 	"AboutMe": "About Me",
@@ -12,10 +12,11 @@
 	"Project1Description": "A website to help foreigners living in Germany with information on education, integration, and employment.",
 	"Project2Description": "An interactive menu for a pizzeria with quick access to dishes and photos.",
 	"Project3Description": "A corporate website for Siltacom with detailed information about its services.",
+	"DesignAndProgramming": "Design | Code",
 
 	"AllRightsReserved": "All rights reserved.",
-	"portfolioDescriptionPart1": "Here you will find examples of web applications, websites, and other digital projects. Each of these reflects my commitment to developing user-friendly and visually appealing interfaces. ",
-	"portfolioDescriptionPart2": "By utilizing modern technologies such as React, Redux Toolkit, and TypeScript, I ensure a seamless blend of functionality and design. ",
+	"portfolioDescriptionPart1": "Here are examples of web applications, websites, and other digital projects that reflect my dedication to creating user-friendly and visually appealing interfaces. I not only write code but also design most of my projects. ",
+	"portfolioDescriptionPart2": "By using modern technologies like React, Redux Toolkit, and TypeScript, I ensure a harmonious combination of functionality and aesthetics. ",
 	"portfolioDescriptionPart3": "I invite you to explore my work and learn more about it!",
 
 	"skillsDescription": "I combine technical expertise with a creative flair for design, enabling me to craft user interfaces that are not only functional but also visually compelling. My ability to integrate clean, efficient code with the development and refinement of designs gives me a unique advantage in delivering harmonious digital solutions.",

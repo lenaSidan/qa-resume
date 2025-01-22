@@ -116,25 +116,31 @@ const ProjectsLogos: React.FC = () => {
 
 			{/* Модальное окно */}
 			{activeImage && (
-				<div className={styles.modal} onClick={() => setActiveImage(null)}>
-					<button
-						type="button"
-						className={styles.closeButton}
-						onClick={(e) => {
-							e.stopPropagation(); // Предотвращаем закрытие при нажатии на крестик
-							setActiveImage(null);
-						}}
-						aria-label="Close modal"
-					>
-						&times;
-					</button>
-					<img
-						src={activeImage}
-						alt="Full Drawing"
-						className={styles.modalImage}
-						onClick={() => setActiveImage(null)} // Закрытие при клике на изображение
-					/>
-				</div>
+				<>
+					{/* Backdrop */}
+					<div className={styles.modalBackdrop} onClick={() => setActiveImage(null)}></div>
+
+					{/* Modal Window */}
+					<div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+						<button
+							type="button"
+							className={styles.closeButton}
+							onClick={(e) => {
+								e.stopPropagation();
+								setActiveImage(null);
+							}}
+							aria-label="Close modal"
+						>
+							&times;
+						</button>
+						<img
+							src={activeImage}
+							alt="Full Drawing"
+							className={styles.modalImage}
+							onClick={() => setActiveImage(null)} // Закрытие при клике на изображение
+						/>
+					</div>
+				</>
 			)}
 		</div>
 	);

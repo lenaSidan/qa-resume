@@ -4,17 +4,6 @@ import styles from './resume.module.css';
 
 const experienceData = [
 	{
-		titleKey: 'experienceCategories.job1.title',
-		companyKey: 'experienceCategories.job1.company',
-		locationKey: 'experienceCategories.job1.location',
-		periodKey: 'experienceCategories.job1.period',
-		descriptionKeys: [
-			'experienceCategories.job1.description1',
-			'experienceCategories.job1.description2',
-			'experienceCategories.job1.description3',
-		],
-	},
-	{
 		titleKey: 'experienceCategories.job2.title',
 		companyKey: 'experienceCategories.job2.company',
 		locationKey: 'experienceCategories.job2.location',
@@ -25,6 +14,18 @@ const experienceData = [
 			'experienceCategories.job2.description3',
 		],
 	},
+	{
+		titleKey: 'experienceCategories.job1.title',
+		companyKey: 'experienceCategories.job1.company',
+		locationKey: 'experienceCategories.job1.location',
+		periodKey: 'experienceCategories.job1.period',
+		descriptionKeys: [
+			'experienceCategories.job1.description1',
+			'experienceCategories.job1.description2',
+			'experienceCategories.job1.description3',
+		],
+	},
+
 	{
 		titleKey: 'experienceCategories.job3.title',
 		companyKey: 'experienceCategories.job3.company',
