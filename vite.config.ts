@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
 		},
 		build: {
 			outDir: 'build',
-			sourcemap: true,
+			sourcemap: false,
 		},
 		base: '/',
 		define: {
