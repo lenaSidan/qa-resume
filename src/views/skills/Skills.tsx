@@ -6,7 +6,7 @@ import SoftSkills from './SoftSkills';
 const skills = [
 	{
 		category: 'Languages',
-		items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
+		items: ['JavaScript', 'TypeScript', 'HTML', 'CSS'],
 	},
 	{
 		category: 'Frameworks & Libraries',

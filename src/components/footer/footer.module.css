@@ -3,7 +3,7 @@
 	color: white;
 	margin-top: auto;
 	width: 100%;
-	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); */
 	text-align: center;
 }
 
@@ -68,35 +68,35 @@
 	}
 
 	.socialLinks {
-		flex-direction: row; /* Вертикальное расположение ссылок */
+		flex-direction: row;
 		gap: 15px;
 		margin: 0;
 		padding: 0;
 	}
 
 	.socialLinks a {
-		display: flex; /* Горизонтальное расположение внутри ссылки */
+		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 10px; /* Расстояние между иконкой и текстом */
-		width: 100%; /* Ссылка растягивается на всю ширину */
+		gap: 10px;
+		width: 100%; 
 		padding: 0;
-		text-align: center; /* Центрируем текст */
+		text-align: center;
 		text-decoration: none;
 	}
 
 	.socialLinks a .tag,
 	.socialLinks a span:not(:first-child) {
-		display: none; /* Скрываем <, </>, и дополнительный текст */
+		display: none;
 	}
 
 	.icon {
-		width: 25px; /* Уменьшаем размер иконок */
+		width: 25px;
 		height: 25px;
 	}
 
 	.info {
-		font-size: 0.6rem; /* Уменьшаем шрифт копирайта */
+		font-size: 0.6rem;
 		line-height: 1.2;
 		margin: 10px 0 0 0;
 	}
