@@ -6,6 +6,7 @@ import styles from './resume.module.css';
 import { useTranslation } from 'react-i18next';
 import EducationClassic from './EducationClassic';
 import ExperienceClassic from './ExperienceClassic';
+import ScrollToTopButton from '../../ScrollToTopButton';
 
 function Resume(): JSX.Element {
 	const { t } = useTranslation();
@@ -77,6 +78,7 @@ function Resume(): JSX.Element {
 					</>
 				)}
 			</div>
+			<ScrollToTopButton />
 		</section>
 	);
 }
