@@ -3,7 +3,7 @@ import emptyReducer from './slices/emptySlice';
 
 export const store = configureStore({
 	reducer: {
-		empty: emptyReducer, // Здесь хотя бы один редюсер
+		empty: emptyReducer,
 	},
 });
 
