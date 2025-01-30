@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
 		plugins: [react()],
 		server: {
 			open: true,
+			historyApiFallback: true, // 🔹 ВАЖНО! Для работы с React Router
 			proxy: {
 				'/api': {
 					target: isDevelopment ? 'http://localhost:8080' : '/',
@@ -18,19 +19,12 @@ export default defineConfig(({ mode }) => {
 			outDir: 'build',
 			sourcemap: true,
 		},
-		base: '/',
-		// 🔹 Добавляем fallback для DigitalOcean и серверов
+		base: './', // 🔹 Убедись, что не "/"
 		assetsInclude: ['**/*.html'],
 		resolve: {
 			alias: {
 				'@': '/src',
 			},
-		},
-		test: {
-			globals: true,
-			environment: 'jsdom',
-			setupFiles: 'src/setupTests',
-			mockReset: true,
 		},
 	};
 });
