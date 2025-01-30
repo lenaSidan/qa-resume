@@ -13,21 +13,14 @@ export default defineConfig(({ mode }) => {
 					target: isDevelopment ? 'http://localhost:8080' : '/',
 				},
 			},
-			// 🔹 Это важно для корректной работы React Router при обновлении страницы
-			hmr: true,
 		},
 		build: {
-			outDir: 'dist', // DigitalOcean ожидает "dist", а не "build"
+			outDir: 'build',
 			sourcemap: true,
 		},
-		base: '/', // Оставляем как "/", чтобы маршруты работали
+		base: '/',
 		define: {
 			API_BASE_URL: isDevelopment ? JSON.stringify('') : JSON.stringify('/api'),
-		},
-		resolve: {
-			alias: {
-				'@': '/src',
-			},
 		},
 		test: {
 			globals: true,

@@ -1,5 +1,5 @@
 import { Suspense, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie';
@@ -23,23 +23,21 @@ function App(): JSX.Element {
 	}, [i18n.language]);
 
 	return (
-		<Router>
-			<div id="root">
-				<div className="mainContent">
-					<Suspense fallback={<Loading />}>
-						<Header />
-						<Routes>
-							<Route path="/" element={<MainSection />} />
-							<Route path="/resume" element={<Resume />} />
-							<Route path="/skills" element={<Skills />} />
-							<Route path="/portfolio" element={<Portfolio />} />
-							<Route path="/contact" element={<Contact />} />
-						</Routes>
-					</Suspense>
-				</div>
-				<Footer />
+		<div id="root">
+			<div className="mainContent">
+				<Suspense fallback={<Loading />}>
+					<Header />
+					<Routes>
+						<Route path="/" element={<MainSection />} />
+						<Route path="/resume" element={<Resume />} />
+						<Route path="/skills" element={<Skills />} />
+						<Route path="/portfolio" element={<Portfolio />} />
+						<Route path="/contact" element={<Contact />} />
+					</Routes>
+				</Suspense>
 			</div>
-		</Router>
+			<Footer />
+		</div>
 	);
 }
 
