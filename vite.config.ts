@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
 					target: isDevelopment ? 'http://localhost:8080' : '/',
 				},
 			},
+			historyApiFallback: true, // 🔹 Позволяет обновлять страницы без 404
 		},
 		build: {
 			outDir: 'build',
