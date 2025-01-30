@@ -13,15 +13,26 @@ export default defineConfig(({ mode }) => {
 					target: isDevelopment ? 'http://localhost:8080' : '/',
 				},
 			},
-			historyApiFallback: true, // 🔹 Позволяет обновлять страницы без 404
 		},
 		build: {
 			outDir: 'build',
 			sourcemap: false,
 		},
-		base: '/',
-		define: {
-			API_BASE_URL: isDevelopment ? JSON.stringify('') : JSON.stringify('/api'),
+		base: '/', // 🔹 Убедись, что базовый путь правильный
+		resolve: {
+			alias: {
+				'@': '/src',
+			},
+		},
+		// 🔹 Включаем обработку маршрутов для SPA
+		preview: {
+			port: 4173,
+			strictPort: true,
+			open: true,
+			// Самое важное: SPA fallback
+			// Все неизвестные маршруты должны вести на index.html
+			// Это предотвращает 404 при обновлении страниц
+			rewrites: [{ from: /\/.*/, to: '/index.html' }],
 		},
 		test: {
 			globals: true,
