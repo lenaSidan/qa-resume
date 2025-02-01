@@ -182,13 +182,13 @@
 .brace {
 	color: #e05d00;
 	font-weight: 300;
-	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+	text-shadow: 0.5px 0.5px 1px rgba(171, 0, 0, 0.8);
 }
 
 .bracket {
 	color: #e05d00;
 	font-weight: 300;
-	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+	text-shadow: 0.5px 0.5px 1px rgba(171, 0, 0, 0.8);
 }
 
 .colon {
@@ -204,7 +204,7 @@
 	color: #e05d00;
 	font-weight: 300;
 	font-size: 1rem;
-	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
+	text-shadow: 0.5px 0.5px 1px rgba(171, 0, 0, 0.8);
 }
 
 .value {
@@ -212,7 +212,7 @@
 }
 
 .company2 {
-	color: #f1eceb;
+	color: #a3a3a3;
 	font-size: 1rem;
 }
 .location2 {
@@ -220,7 +220,7 @@
 	font-size: 0.8rem;
 }
 .period2 {
-	color: #f1eceb;
+	color: #a3a3a3;
 	font-size: 0.8rem;
 	font-style: italic;
 }
