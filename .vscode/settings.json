@@ -27,7 +27,5 @@
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"cSpell.words": [
-	
-	]
+	"cSpell.words": ["pixart", "tomate"]
 }

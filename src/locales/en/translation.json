@@ -15,7 +15,7 @@
 	"DesignAndProgramming": "Design | Code",
 
 	"AllRightsReserved": "All rights reserved.",
-	"portfolioDescriptionPart1": "Here are examples of web applications, websites, and other digital projects that reflect my dedication to creating user-friendly and visually appealing interfaces. I not only write code but also design most of my projects. ",
+	"portfolioDescriptionPart1": "Here are my works—web applications, websites, and other digital projects that reflect my dedication to creating user-friendly and visually appealing interfaces. I not only write code but also design most of my projects. ",
 	"portfolioDescriptionPart2": "By using modern technologies like React, Redux Toolkit, and TypeScript, I ensure a harmonious combination of functionality and aesthetics. ",
 	"portfolioDescriptionPart3": "I invite you to explore my work and learn more about it!",
 
@@ -42,9 +42,14 @@
 	"Project 2": "TomatePizza: => Interactive Menu for a Pizzeria",
 	"ProjectDescription2": "TomatePizza is a modern and interactive menu website created for a pizzeria. In this project, I designed and illustrated a unique Italian-inspired visual style with vibrant graphics and a user-friendly interface. The website is fully responsive, ensuring a seamless experience across all devices. This project perfectly combines aesthetics and functionality, offering users an enjoyable interaction experience.",
 	"Logo 1": "Logos: => Creative Branding Concepts",
-	"Logo1Description": "This section features a collection of thoughtfully crafted logos that merge creativity with purpose. Each design reflects the essence of its brand, showcasing my ability to create visuals that communicate stories and values with clarity.",
+	"Logo1Description": "A collection of thoughtfully crafted logos that merge creativity with purpose. Each design reflects the essence of its brand, showcasing my ability to create visuals that communicate stories and values with clarity. ",
+	"Project 3": "PixelArt: => Nostalgic and Charming Digital Creations",
+	"ProjectDescription3": "PixelArt is a collection of digital works inspired by the retro aesthetics of pixel graphics. Each piece is carefully designed to capture the charm of classic games while maintaining a unique and modern touch. From detailed character sprites to atmospheric landscapes, this project showcases my passion for pixel art and attention to detail.",
 
 	"Resume": "Resume",
+	"Choose Display Style": "Choose Display Style",
+	"Classic": "Classic",
+	"Code": "Code",
 	"Experience": "Experience",
 	"Experience/>": "Experience",
 	"Experience2": "<Experience>",
@@ -158,7 +163,7 @@
 			"description3.2": " \"Studied English teaching methodologies.\""
 		}
 	},
-	
+
 	"Contact Me": "Contact Me",
 	"Your Name": "Your Name",
 	"Your Email": "Your Email",
