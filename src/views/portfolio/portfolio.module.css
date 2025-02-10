@@ -65,7 +65,7 @@
 	width: 100%;
 	max-width: 1200px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 20px;
 }
 
@@ -81,7 +81,7 @@
 	transition:
 		transform 0.3s ease,
 		background 0.3s ease;
-	height: 100%;
+	height: auto;
 	position: relative;
 }
 
@@ -144,6 +144,7 @@
 }
 
 .projectLink {
+	width: 200px;
 	display: inline-block;
 	background-color: #797878a7;
 	color: #f1eceb;
@@ -174,6 +175,36 @@
 	font-weight: 300;
 	display: block;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.videoPreview {
+	width: 72%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	gap: 10px;
+}
+
+.downloadButton {
+	width: 200px;
+	display: inline-block;
+	border: 1.5px solid #797878a7;
+	color: #f1eceb;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 300;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: background 0.3s ease;
+	margin-top: auto;
+	cursor: pointer;
+}
+.downloadButton:hover {
+	color: #fa873a;
 }
 @media (max-width: 768px) {
 	.portfolioSection {
@@ -252,8 +283,12 @@
 		margin-bottom: 15px;
 		text-align: center;
 	}
-
-	.projectLink {
+	.buttons {
+		display: flex;
+		flex-direction: column;
+	}
+	.projectLink,
+	.downloadButton {
 		padding: 8px 15px;
 		font-size: 0.9rem;
 	}
