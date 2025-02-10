@@ -49,13 +49,14 @@ const projects: DrawingProject[] = [
 		title: 'Project 3',
 		description: 'ProjectDescription3',
 		drawings: [
-			{ image: '/pixart/bekon.webp' },
+			{ image: '/pixart/bacon.webp' },
 			{ image: '/pixart/egg.svg' },
 			{ image: '/pixart/chicken.svg' },
 			{ image: '/pixart/background.svg' },
 			{ image: '/pixart/egg_chicken.svg' },
 			{ image: '/pixart/egg_runny.svg' },
 			{ image: '/pixart/smiles.webp' },
+			{ image: '/pixart/lips.webp' },
 		],
 	},
 ];
