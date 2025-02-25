@@ -15,24 +15,21 @@ function Footer(): JSX.Element {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<span className={styles.tag}>&lt;LinkedIn&gt;</span>
 						<img src="/linkedin-icon.png" alt="LinkedIn" className={styles.icon} />
-						<span className={styles.tag}>&lt;/LinkedIn&gt;</span>
+						<span className={styles.tag}>LinkedIn</span>
 					</a>
 					<a href="https://github.com/lenaSidan" target="_blank" rel="noopener noreferrer">
-						<span className={styles.tag}>&lt;GitHub&gt;</span>
 						<img src="/github-icon.png" alt="GitHub" className={styles.icon} />
-						<span className={styles.tag}>&lt;/GitHub&gt;</span>
+						<span className={styles.tag}>GitHub</span>
 					</a>
 					<Link to="/contact">
-						<span className={styles.tag}>&lt;Email&gt;</span>
 						<img src="/email-icon.png" alt="Email" className={styles.icon} />
-						<span className={styles.tag}>&lt;/Email&gt;</span>
+						<span className={styles.tag}>Email</span>
 					</Link>
 				</div>
 
 				<p className={styles.info}>
-					&copy; {new Date().getFullYear()} ELENA SIDANOVA — {t('AllRightsReserved').toUpperCase()}
+					&copy; {new Date().getFullYear()} MAIIA KATTS — {t('AllRightsReserved').toUpperCase()}
 				</p>
 			</div>
 		</footer>

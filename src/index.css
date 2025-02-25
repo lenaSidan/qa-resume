@@ -1,23 +1,55 @@
-html,
-body {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	min-height: 100%;
-	background: linear-gradient(to bottom, #100d0e, #54585b 50%, #100d0e);
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	background-color: #636363;
+	font-family: 'Lucida Sans', sans-serif;
+	position: relative; /* Чтобы псевдоэлемент не выходил за границы */
+	z-index: 0; /* Добавляем базовый слой */
 }
+
+/* 🎨 Теперь фоновые соты в `::before` */
+body::before {
+	content: "";
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 1000px;
+	height: 1000px;
+	background-image: url('/public/background.png'); 
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	opacity: 0;
+	animation: fadeIn 1.5s ease-in-out forwards;
+
+	/* 📌 Фикс: отправляем фон за контент, но не скрываем */
+	z-index: -1;
+	pointer-events: none; /* Чтобы соты не мешали кликам */
+}
+
 h4,
 button {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+		Verdana, sans-serif;
 }
+
 p {
 	margin: 0 0 10px 0;
 }
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -26,5 +58,5 @@ body {
 #root {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh; /* Высота корня соответствует высоте экрана */
+	min-height: 100vh;
 }

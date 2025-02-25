@@ -1,9 +1,10 @@
 .footer {
-	/* background-color: #100d0e; */
+background-color: #393939;
 	color: white;
+	padding: 10px 0;
 	margin-top: auto;
 	width: 100%;
-	/* box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); */
+ box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 	text-align: center;
 }
 
@@ -15,9 +16,9 @@
 }
 
 .info {
-	color: #e05d00;
+	color: #b0b0b0;
 	font-size: 0.7rem;
-	margin: 0 0 15px 0;
+	margin: 0 ;
 }
 
 .socialLinks {
@@ -42,13 +43,13 @@
 }
 
 .socialLinks a:hover {
-	color: #e05d00;
+	color: #606060;
 	transform: scale(1.05);
 }
 
 .icon {
 	width: 30px;
-	height: 30px;
+	height: auto;
 	margin: 0 5px;
 }
 

@@ -1,110 +1,81 @@
-.customDropdown {
-	position: relative;
-	display: inline-block;
+.languageSelector {
+	display: flex;
+	gap: 4px;
 	align-items: center;
-}
-.imageBox {
-	color: #ffffff;
 }
 
-.dropdownHeader {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin-right: 100px;
-	padding: 0 0 5px 0;
-	gap: 5px;
-	cursor: pointer;
-	background-color: transparent;
+.hexButton {
+	background: none;
 	border: none;
-	color: #f1eceb;
-	font-size: 1rem;
-	font-weight: 300;
-
-	text-align: center;
-}
-
-.dropdownHeader:hover {
-	color: #e05d00;
-	transform: scale(1.05);
-}
-
-.dropdownListNoneActive {
-	display: none;
-}
-
-.dropdownListActive {
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	top: 90%;
-	left: 50%;
-	transform: translateX(-50%);
+	cursor: pointer;
 	padding: 0;
-	z-index: 101;
+	width: 40px;
+	height: auto;
+	transition: transform 0.2s ease-in-out;
 }
 
-.dropdownListActive button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	white-space: nowrap;
-	padding: 5px;
-	color: #f1eceb;
-	font-size: 14px;
-	font-weight: 300;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
+.hexButton:hover {
+	transform: scale(1.1);
+
 }
 
-.dropdownListActive button:hover {
-	color: #e05d00;
+.svgHex {
+	padding:  5px 0;
+	width: 40px;
+	height: 34.6px;
+}
+
+.hex {
+	fill: none;
+	stroke: #888888;
+	stroke-width: 5;
+	transition: stroke 0.3s ease-in-out;
+}
+
+.activeHex {
+	fill: none;
+	stroke: #ffcc00;
+	stroke-width: 5;
+	box-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+}
+.activeHex + .text {
+	fill: #ffffff; /* Теперь активный текст белый */
+}
+
+
+.text {
+	fill: #888888;
+	font-size: 2.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	dominant-baseline: middle;
+	transition: fill 0.3s ease-in-out;
+}
+
+
+.hexButton:active .text {
+	fill: #ffffff;
 }
 @media (max-width: 768px) {
-	.dropdownHeader {
-		width: 35px;
-		height: 15px;
-		font-size: 16px;
-		padding: 0 6px;
-		color: #f1eceb;
-		margin-right: 0;
-	}
-	.dropdownHeader:hover {
-		color: #e05d00;
-	}
-	.imageBox {
-		display: none;
+	.hexButton {
+		width: 30px;
 	}
 
-	.dropdownListActive {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		font-size: 14px;
-		top: 100%;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 50%;
-		padding: 6px 0 5px 0;
-		z-index: 101;
-		color: #f1eceb;
-		border-radius: 4px;
+	.svgHex {
+		width: 30px;
+		height: 26px;
 	}
 
-	.dropdownListActive button {
-		font-size: 12px;
-		padding: 0 8px;
-		background-color: transparent;
-		border: none;
-		cursor: pointer;
-		color: #f1eceb;
-		text-align: center;
+	.text {
+		font-size: 1.2em;
 	}
 
-	.dropdownListActive button:hover {
-		color: #e05d00;
-		background-color: rgba(0, 0, 0, 0.1);
+	.hex,
+	.activeHex {
+		stroke-width: 3.5;
+	}
+
+	.hexButton:hover {
+		transform: scale(1.05);
 	}
 }

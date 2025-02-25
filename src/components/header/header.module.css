@@ -1,7 +1,8 @@
 .header {
 	display: flex;
+	background-color: #393939;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items:  center;
 	position: relative;
 	padding: 5px 0;
 	width: 100%;
@@ -14,6 +15,7 @@
 	align-items: center;
 	gap: 10px;
 	margin-left: 40px;
+
 }
 
 .logo:hover {
@@ -32,7 +34,7 @@
 
 .logoImage {
 	width: auto;
-	height: 60px;
+	height: 50px;
 	object-fit: contain;
 }
 .burgerMenu {
@@ -46,7 +48,7 @@ display: none;
 	list-style: none;
 	display: flex;
 	gap: 20px;
-	padding: 0;
+	padding: 5px 0;
 	margin: 0;
 }
 
@@ -54,17 +56,17 @@ display: none;
 	color: #f1eceb;
 	text-decoration: none;
 	font-size: 1rem;
-	font-weight: 300;
+	font-weight: lighter;
 	transition: color 0.3s;
 }
 
 .navLink:hover {
-	color: #e05d00;
+	color: #ffcc00;
 	transform: scale(1.05);
 }
 .navLink:active,
 .navLink.active {
-	color: #e05d00;
+	color: #ffcc00;
 	transform: scale(1.05);
 }
 .rightSection {

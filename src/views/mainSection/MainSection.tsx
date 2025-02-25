@@ -9,7 +9,7 @@ function MainSection(): JSX.Element {
 		<section className={styles.mainSection}>
 			<div className={styles.content}>
 				<div className={styles.text}>
-					<div className={styles.name}>{t('Sidanova').toUpperCase()}</div>
+					<div className={styles.name}>{t('Katts').toUpperCase()}</div>
 					<p className={styles.subtitle}>{t('React')}</p>
 					<p className={styles.description}>{t('Description')}</p>
 					<div className={styles.buttons}>
@@ -32,7 +32,7 @@ function MainSection(): JSX.Element {
 					</div>
 				</div>
 				<div className={styles.imageBox}>
-					<img src="/introImage-black.png" alt={t('Sidanova')} className={styles.photo} />
+					<img src="/logo.webp" alt={t('Katts')} className={styles.photo} />
 				</div>
 			</div>
 		</section>

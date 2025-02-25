@@ -14,7 +14,7 @@ function Header(): JSX.Element {
 		<header className={styles.header}>
 			<div className={styles.logo}>
 				<a href="/" className={styles.logoLink}>
-					<img src="/logoSidan.png" alt={t('Sidanova')} className={styles.logoImage} />
+					<img src="/logoKatts2.png" alt={t('Katts')} className={styles.logoImage} />
 				</a>
 			</div>
 			<div className={styles.burgerMenu} onClick={toggleMenu}>
